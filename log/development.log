@@ -38237,3 +38237,1311 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 12:18:43
   [1m[36mUser Load (1.6ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1[0m
   [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1
   [1m[36mTrueShade Load (3.8ms)[0m  [1mSELECT "true_shades".* FROM "true_shades" WHERE "true_shades"."id" = $1 LIMIT 1[0m  [["id", 315]]
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-23 12:37:20 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError - Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.:
+  activerecord (4.0.4) lib/active_record/migration.rb:383:in `check_pending!'
+  activerecord (4.0.4) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:373:in `_run__3800474192151513840__call__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  rack-contrib (1.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/headers.rb:16:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/e416fb97de7b7157/variables" for 127.0.0.1 at 2014-09-23 12:37:20 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddNameToTrueShades (20140919222722)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (1.9ms)[0m  [1mALTER TABLE "true_shades" ADD COLUMN "name" character varying(255)[0m
+PG::UndefinedTable: ERROR:  relation "true_shades" does not exist
+: ALTER TABLE "true_shades" ADD COLUMN "name" character varying(255)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (7.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (2.2ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20140919010708)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (5.4ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "name" character varying(255), "email" character varying(255), "password" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (3.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140919010708"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddPasswordDigestToUsers (20140919020955)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" ADD COLUMN "password_digest" character varying(255)[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140919020955"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateUserMakeups (20140919221947)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (2.4ms)[0m  [1mCREATE TABLE "user_makeups" ("id" serial primary key, "makeup_id" integer, "user_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (0.8ms)[0m  CREATE INDEX "index_user_makeups_on_makeup_id" ON "user_makeups" ("makeup_id")
+  [1m[36m (0.9ms)[0m  [1mCREATE INDEX "index_user_makeups_on_user_id" ON "user_makeups" ("user_id")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140919221947"]]
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+Migrating to AddNameToTrueShades (20140919222722)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "true_shades" ADD COLUMN "name" character varying(255)[0m
+PG::UndefinedTable: ERROR:  relation "true_shades" does not exist
+: ALTER TABLE "true_shades" ADD COLUMN "name" character varying(255)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddBrandToUsers (20140920003405)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (2.2ms)[0m  [1mALTER TABLE "users" ADD COLUMN "brand" character varying(255)[0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140920003405"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddProductToUsers (20140920003415)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD COLUMN "product" character varying(255)[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140920003415"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddShadeToUsers (20140920003422)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD COLUMN "shade" character varying(255)[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140920003422"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to AddTrueShadeIdToMakeups (20140923045024)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "makeups" ADD COLUMN "true_shade_id" character varying(255)[0m
+PG::UndefinedTable: ERROR:  relation "makeups" does not exist
+: ALTER TABLE "makeups" ADD COLUMN "true_shade_id" character varying(255)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (6.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (1.6ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20140919010708)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (5.2ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "name" character varying(255), "email" character varying(255), "password" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140919010708"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddPasswordDigestToUsers (20140919020955)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" ADD COLUMN "password_digest" character varying(255)[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140919020955"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateUserMakeups (20140919221947)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (2.6ms)[0m  [1mCREATE TABLE "user_makeups" ("id" serial primary key, "makeup_id" integer, "user_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (0.9ms)[0m  CREATE INDEX "index_user_makeups_on_makeup_id" ON "user_makeups" ("makeup_id")
+  [1m[36m (0.7ms)[0m  [1mCREATE INDEX "index_user_makeups_on_user_id" ON "user_makeups" ("user_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140919221947"]]
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddBrandToUsers (20140920003405)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD COLUMN "brand" character varying(255)[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140920003405"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to AddProductToUsers (20140920003415)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD COLUMN "product" character varying(255)[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140920003415"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to AddShadeToUsers (20140920003422)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD COLUMN "shade" character varying(255)[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140920003422"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddTrueShadeIdToMakeups (20140923045024)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "makeups" ADD COLUMN "true_shade_id" character varying(255)[0m
+PG::UndefinedTable: ERROR:  relation "makeups" does not exist
+: ALTER TABLE "makeups" ADD COLUMN "true_shade_id" character varying(255)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (114.4ms)[0m  [1mDROP DATABASE IF EXISTS "MUSG-final2_development"[0m
+  [1m[35m (114.6ms)[0m  DROP DATABASE IF EXISTS "MUSG-final2_test"
+  [1m[36m (233.1ms)[0m  [1mCREATE DATABASE "MUSG-final2_development" ENCODING = 'unicode'[0m
+  [1m[35m (232.9ms)[0m  CREATE DATABASE "MUSG-final2_test" ENCODING = 'unicode'
+  [1m[36mSQL (3.3ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (10.9ms)[0m  CREATE TABLE "makeups" ("id" serial primary key, "brand" character varying(255), "product" character varying(255), "shade" character varying(255), "created_at" timestamp, "updated_at" timestamp, "image" bytea, "true_shade_id" integer) 
+  [1m[36m (1.7ms)[0m  [1mCREATE INDEX "index_makeups_on_true_shade_id" ON "makeups" USING btree ("true_shade_id")[0m
+  [1m[35m (6.4ms)[0m  CREATE TABLE "true_shades" ("id" serial primary key, "makeup_id" integer, "user_id" integer, "created_at" timestamp, "updated_at" timestamp, "name" character varying(255), "description" character varying(255)) 
+  [1m[36m (2.1ms)[0m  [1mCREATE INDEX "index_true_shades_on_makeup_id" ON "true_shades" USING btree ("makeup_id")[0m
+  [1m[35m (1.2ms)[0m  CREATE INDEX "index_true_shades_on_user_id" ON "true_shades" USING btree ("user_id")
+  [1m[36m (4.9ms)[0m  [1mCREATE TABLE "user_makeups" ("id" serial primary key, "makeup_id" integer, "user_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (1.5ms)[0m  CREATE INDEX "index_user_makeups_on_makeup_id" ON "user_makeups" USING btree ("makeup_id")
+  [1m[36m (0.9ms)[0m  [1mCREATE INDEX "index_user_makeups_on_user_id" ON "user_makeups" USING btree ("user_id")[0m
+  [1m[35m (3.9ms)[0m  CREATE TABLE "users" ("id" serial primary key, "name" character varying(255), "email" character varying(255), "created_at" timestamp, "updated_at" timestamp, "password_digest" character varying(255), "brand" character varying(255), "product" character varying(255), "shade" character varying(255), "true_shade_id" integer) 
+  [1m[36m (1.0ms)[0m  [1mCREATE INDEX "index_users_on_true_shade_id" ON "users" USING btree ("true_shade_id")[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) 
+  [1m[36m (1.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140923185949')[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140919010708')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140919020955')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140919221947')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140920003405')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140920003415')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140920003422')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140923045024')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140923185220')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140923185311')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140923185603')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "true_shades"[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "users"
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "makeups"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (5.9ms)[0m  [1mINSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 19:46:23 UTC +00:00], ["description", "Very-fair means you fall in the pale skin color range. You sunburn almost insantly and must have skin protection all the time. Your skin is a porcelain color that is almost clear."], ["name", "Very-Fair"], ["updated_at", Tue, 23 Sep 2014 19:46:23 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 19:46:23 UTC +00:00], ["description", "Fair 1 means you fall in the fair skin color range. You sunburn very easily and get freckles when you burn. Your skin is a pale porcelain color with a blue undertone."], ["name", "Fair 1"], ["updated_at", Tue, 23 Sep 2014 19:46:23 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 19:46:23 UTC +00:00], ["description", "Fair 2 means you fall in the fair skin color range. You sunburn very easily and get freckles when you burn. Your skin is a pale porcelain color with a green undertone."], ["name", "Fair 2"], ["updated_at", Tue, 23 Sep 2014 19:46:23 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 19:46:23 UTC +00:00], ["description", "Fair 3 means you fall in the fair skin color range. You sunburn very easily and get freckles when you burn. Your skin is a pale porcelain color with a pink undertone."], ["name", "Fair 3"], ["updated_at", Tue, 23 Sep 2014 19:46:23 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 19:46:23 UTC +00:00], ["description", "Fair-light 4 means you fall in the lightest of light skin color range. You sunburn easily and rarely tan. Your skin is a pale ivory color with a yellow undertone."], ["name", "Fair-light 4"], ["updated_at", Tue, 23 Sep 2014 19:46:23 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 19:46:23 UTC +00:00], ["description", "Fair-light 2 means you fall in the lightest of light skin color range. You sunburn easily and rarely tan. Your skin is a pale ivory color with a green undertone."], ["name", "Fair-light 2"], ["updated_at", Tue, 23 Sep 2014 19:46:23 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 19:46:23 UTC +00:00], ["description", "Fair-light 3 means you fall in the lightest of light skin color range. You sunburn easily and rarely tan. Your skin is a pale ivory color with a pink undertone."], ["name", "Fair-light 3"], ["updated_at", Tue, 23 Sep 2014 19:46:23 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 19:46:23 UTC +00:00], ["description", "Light 4 means you fall in the light skin color range. You sunburn pretty easily but can tan slightly with SPF protection. Your skin is an ivory color with a yellow undertone."], ["name", "Light 4"], ["updated_at", Tue, 23 Sep 2014 19:46:23 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 19:46:23 UTC +00:00], ["description", "Light 2 means you fall in the light skin color range. You sunburn pretty easily but can tan slightly with SPF protection. Your skin is an ivory color with a green undertone."], ["name", "Light 2"], ["updated_at", Tue, 23 Sep 2014 19:46:23 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 19:46:23 UTC +00:00], ["description", "Light 3 means you fall in the light skin color range. You sunburn pretty easily but can tan slightly with SPF protection. Your skin is an ivory color with a pink undertone."], ["name", "Light 3"], ["updated_at", Tue, 23 Sep 2014 19:46:23 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 19:46:23 UTC +00:00], ["description", "Light-medium 4 means you fall in the lightest of medium skin color range. You sunburn pretty easily but can tan with SPF protection. Your skin is a cream/ripe cashew nut kind of color with a yellow undertone."], ["name", "Light-medium 4"], ["updated_at", Tue, 23 Sep 2014 19:46:23 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 19:46:23 UTC +00:00], ["description", "Light-medium 5 means you fall in the lightest of medium skin color range. You sunburn pretty easily but can tan with SPF protection. Your skin is a cream/ripe cashew nut kind of color with a neutral undertone."], ["name", "Light-medium 5"], ["updated_at", Tue, 23 Sep 2014 19:46:23 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 19:46:23 UTC +00:00], ["description", "Light-medium 3 means you fall in the lightest of medium skin color range. You sunburn pretty easily but can tan with SPF protection. Your skin is a cream/ripe cashew nut kind of color with a pink undertone."], ["name", "Light-medium 3"], ["updated_at", Tue, 23 Sep 2014 19:46:23 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 19:46:23 UTC +00:00], ["description", "Medium 4 means you fall in the medium skin color range, common among 80% of women. You sometimes sunburn but tan easily with SPF protection. Your skin is a beige color with a yellow undertone."], ["name", "Medium 4"], ["updated_at", Tue, 23 Sep 2014 19:46:23 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["description", "Medium 5 means you fall in the medium skin color range, common among 80% of women. You sometimes sunburn but tan easily with SPF protection. Your skin is a beige color with a neutral undertone."], ["name", "Medium 5"], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["description", "Medium 3 means you fall in the medium skin color range, common among 80% of women. You sometimes sunburn but tan easily with SPF protection. Your skin is a beige color with a pink undertone."], ["name", "Medium 3"], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["description", "Light-tan 4 means you fall in the light-tan skin color range. You rarely sunburn and always tan. Your skin is an iced coffee kind of color with a yellow undertone."], ["name", "Light-tan 4"], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["description", "Light-tan 2 means you fall in the light-tan skin color range. You rarely sunburn and always tan. Your skin is an iced coffee kind of color with a green undertone."], ["name", "Light-tan 2"], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["description", "Light-tan 6 means you fall in the light-tan skin color range. You rarely sunburn and always tan. Your skin is an iced coffee kind of color with a golden undertone."], ["name", "Light-tan 6"], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["description", "Tan 6 means you fall in the tan skin color range. You rarely sunburn and always tan. Your skin is a caramel color with a golden undertone."], ["name", "Tan 6"], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["description", "Tan 2 means you fall in the tan skin color range. You rarely sunburn and always tan. Your skin is a caramel color with a green undertone."], ["name", "Tan 2"], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["description", "Tan 7 means you fall in the tan skin color range. You rarely sunburn and always tan. Your skin is a caramel color with a red undertone."], ["name", "Tan 7"], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["description", "Dark tan 6 means you fall in the dark tan color range. You rarely sunburn and sometimes tan. Your skin is a milk chocolate color with a golden undertone."], ["name", "Dark tan 6"], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["description", "Dark tan 2 means you fall in the dark tan color range. You rarely sunburn and sometimes tan. Your skin is a milk chocolate color with a green undertone."], ["name", "Dark tan 2"], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["description", "Dark tan 7 means you fall in the dark tan color range. You rarely sunburn and sometimes tan. Your skin is a milk chocolate color with a red undertone."], ["name", "Dark tan 7"], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["description", "Dark brown 6 means you fall in the dark brown skin color range. You do not sunburn nor do you tan. Your skin is mahogany color with a golden undertone.."], ["name", "Dark brown 6"], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["description", "Dark brown 2 means you fall in the dark brown skin color range. You do not sunburn nor do you tan. Your skin is mahogany color with a green undertone."], ["name", "Dark brown 2"], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["description", "Dark brown 7 means you fall in the dark brown skin color range. You do not sunburn nor do you tan. Your skin is mahogany color with red a undertone."], ["name", "Dark brown 7"], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["description", "Deep 8 means you fall in the darkest skin color range. You do not sunburn nor do you tan. Your skin is an espresso color with a blue-black undertone."], ["name", "Deep 8"], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["description", "Deep 7 means you fall in the darkest skin color range. You do not sunburn nor do you tan. Your skin is an espresso color with a red undertone."], ["name", "Deep 7"], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand", "Giorgio Armani"], ["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["product", "Luminous Silk Foundation"], ["shade", "13"], ["true_shade_id", 27], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["brand", "NARS"], ["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["product", "Sheer Glow Foundation"], ["shade", "Benares"], ["true_shade_id", 27], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand", "NARS"], ["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["product", "Sheer Matte Foundation"], ["shade", "Benares"], ["true_shade_id", 27], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["brand", "Make Up For Ever"], ["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["product", "Mat Velvet + Matifying Foundation"], ["shade", "75"], ["true_shade_id", 27], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand", "MAC"], ["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["product", "Matchmaster SPF 15 Foundation"], ["shade", "8"], ["true_shade_id", 27], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["brand", "e.l.f."], ["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["product", "Studio Flawless Finish Foundation"], ["shade", "Coco #83116"], ["true_shade_id", 27], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand", "L’Oreal"], ["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["product", "Magic Skin Beautifier B.B. Cream"], ["shade", "814 Medium"], ["true_shade_id", 20], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["brand", "L'Oreal"], ["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["product", "True Match Lumi Healthy Foundation"], ["shade", "Buff Beige"], ["true_shade_id", 20], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand", "Kat Von D"], ["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["product", "Lock-it Tattoo Foundation"], ["shade", "Medium 54"], ["true_shade_id", 20], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["brand", "Revlon"], ["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["product", "ColorStay Makeup For Combo/Oily Skin"], ["shade", "350 Rich Tan"], ["true_shade_id", 20], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand", "Urban Decay"], ["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["product", "Naked Skin Foundation"], ["shade", "6.0"], ["true_shade_id", 20], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["brand", "Chanel"], ["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["product", "Vitalumiere Aqua Ultra Light Skin Perfecting Make Up SFP 15"], ["shade", "B30 Sable"], ["true_shade_id", 14], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand", "Neutrogena"], ["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["product", "Healthy Skin Liquid Makeup Broad Spectrum SPF 20"], ["shade", "Natural Beige"], ["true_shade_id", 14], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["brand", "Estee Lauder"], ["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["product", "Double Wear Stay-in-Place Makeup"], ["shade", "Sand 1W2"], ["true_shade_id", 14], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand", "Revlon"], ["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["product", "Colorstay Combination/Oily SPF 6"], ["shade", "280 Golden Beige"], ["true_shade_id", 14], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["brand", "Tarte"], ["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["product", "Powderful Amazonian Clay Pressed Mineral Powder"], ["shade", "Medium 08"], ["true_shade_id", 14], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand", "Revlon"], ["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["product", "Nearly Naked"], ["shade", "260 Caramel"], ["true_shade_id", 24], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["brand", "Liz Earle"], ["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["product", "Signature Foundation"], ["shade", "Caramel 07"], ["true_shade_id", 24], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand", "MAC"], ["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["product", "Face and Body Foundation"], ["shade", "C7"], ["true_shade_id", 24], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["brand", "NARS"], ["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["product", "Sheer Matte"], ["shade", "New Orleans"], ["true_shade_id", 23], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand", "MAC"], ["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["product", "Studio Fix Fluid Foundation"], ["shade", "NW45"], ["true_shade_id", 23], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["brand", "e.l.f."], ["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["product", "Tinted Moisturizer"], ["shade", "Espresso"], ["true_shade_id", 23], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand", "Iman"], ["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["product", "Second to None Luminous Foundation"], ["shade", "Earth 2"], ["true_shade_id", 23], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["brand", "CoverGirl"], ["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["product", "Queen Collection 3 in 1 Foundation"], ["shade", "Q840 Almond Glow"], ["true_shade_id", 26], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand", "Revlon"], ["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["product", "ColorStay Makeup For Combo/Oily Skin"], ["shade", "440 Mahogany"], ["true_shade_id", 26], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["brand", "MAC"], ["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["product", "Studio Sculpt Foundation"], ["shade", "NW20"], ["true_shade_id", 7], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand", "Rimmel"], ["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["product", "Wake Me Up Foundation"], ["shade", "True Ivory"], ["true_shade_id", 7], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["brand", "Make Up For Ever"], ["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["product", "HD Invisible Cover Foundation"], ["shade", "140"], ["true_shade_id", 15], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand", "Make Up For Ever"], ["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["product", "Mat Velvet + Matifying Foundation"], ["shade", "40"], ["true_shade_id", 15], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["brand", "Urban Decay"], ["created_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00], ["product", "Naked Skin Foundation"], ["shade", "4.0"], ["true_shade_id", 15], ["updated_at", Tue, 23 Sep 2014 19:46:24 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[36m (5.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (1.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20140919010708)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (4.0ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "name" character varying(255), "email" character varying(255), "password" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140919010708"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to AddPasswordDigestToUsers (20140919020955)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "users" ADD COLUMN "password_digest" character varying(255)[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140919020955"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateUserMakeups (20140919221947)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (4.1ms)[0m  [1mCREATE TABLE "user_makeups" ("id" serial primary key, "makeup_id" integer, "user_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (1.0ms)[0m  CREATE INDEX "index_user_makeups_on_makeup_id" ON "user_makeups" ("makeup_id")
+  [1m[36m (1.1ms)[0m  [1mCREATE INDEX "index_user_makeups_on_user_id" ON "user_makeups" ("user_id")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140919221947"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddBrandToUsers (20140920003405)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD COLUMN "brand" character varying(255)[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140920003405"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to AddProductToUsers (20140920003415)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD COLUMN "product" character varying(255)[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140920003415"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to AddShadeToUsers (20140920003422)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD COLUMN "shade" character varying(255)[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140920003422"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to AddTrueShadeIdToMakeups (20140923045024)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "makeups" ADD COLUMN "true_shade_id" character varying(255)[0m
+PG::UndefinedTable: ERROR:  relation "makeups" does not exist
+: ALTER TABLE "makeups" ADD COLUMN "true_shade_id" character varying(255)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (9.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (2.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20140919010708)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (8.0ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "name" character varying(255), "email" character varying(255), "password" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140919010708"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to AddPasswordDigestToUsers (20140919020955)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (1.9ms)[0m  [1mALTER TABLE "users" ADD COLUMN "password_digest" character varying(255)[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140919020955"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateUserMakeups (20140919221947)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (4.9ms)[0m  [1mCREATE TABLE "user_makeups" ("id" serial primary key, "makeup_id" integer, "user_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (0.8ms)[0m  CREATE INDEX "index_user_makeups_on_makeup_id" ON "user_makeups" ("makeup_id")
+  [1m[36m (3.4ms)[0m  [1mCREATE INDEX "index_user_makeups_on_user_id" ON "user_makeups" ("user_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140919221947"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to AddBrandToUsers (20140920003405)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD COLUMN "brand" character varying(255)[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140920003405"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to AddProductToUsers (20140920003415)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD COLUMN "product" character varying(255)[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140920003415"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to AddShadeToUsers (20140920003422)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD COLUMN "shade" character varying(255)[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140920003422"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to RemoveTrueShadeFromUsers (20140923185220)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "users" DROP "true_shade"[0m
+PG::UndefinedColumn: ERROR:  column "true_shade" of relation "users" does not exist
+: ALTER TABLE "users" DROP "true_shade"
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (2.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (1.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20140919010708)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (4.0ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "name" character varying(255), "email" character varying(255), "password" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140919010708"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddPasswordDigestToUsers (20140919020955)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" ADD COLUMN "password_digest" character varying(255)[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140919020955"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateUserMakeups (20140919221947)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (2.3ms)[0m  [1mCREATE TABLE "user_makeups" ("id" serial primary key, "makeup_id" integer, "user_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (0.9ms)[0m  CREATE INDEX "index_user_makeups_on_makeup_id" ON "user_makeups" ("makeup_id")
+  [1m[36m (1.0ms)[0m  [1mCREATE INDEX "index_user_makeups_on_user_id" ON "user_makeups" ("user_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140919221947"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to AddBrandToUsers (20140920003405)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD COLUMN "brand" character varying(255)[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140920003405"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddProductToUsers (20140920003415)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD COLUMN "product" character varying(255)[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140920003415"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to AddShadeToUsers (20140920003422)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD COLUMN "shade" character varying(255)[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140920003422"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to RemoveTrueShadeIdFromMakeups (20140923185311)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "makeups" DROP "true_shade_id"[0m
+PG::UndefinedTable: ERROR:  relation "makeups" does not exist
+: ALTER TABLE "makeups" DROP "true_shade_id"
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (3.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20140919010708)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (4.4ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "name" character varying(255), "email" character varying(255), "password" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140919010708"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to AddPasswordDigestToUsers (20140919020955)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (2.1ms)[0m  [1mALTER TABLE "users" ADD COLUMN "password_digest" character varying(255)[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140919020955"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateUserMakeups (20140919221947)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (2.9ms)[0m  [1mCREATE TABLE "user_makeups" ("id" serial primary key, "makeup_id" integer, "user_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (0.9ms)[0m  CREATE INDEX "index_user_makeups_on_makeup_id" ON "user_makeups" ("makeup_id")
+  [1m[36m (0.7ms)[0m  [1mCREATE INDEX "index_user_makeups_on_user_id" ON "user_makeups" ("user_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140919221947"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddBrandToUsers (20140920003405)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD COLUMN "brand" character varying(255)[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140920003405"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Migrating to AddProductToUsers (20140920003415)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD COLUMN "product" character varying(255)[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140920003415"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to AddShadeToUsers (20140920003422)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD COLUMN "shade" character varying(255)[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140920003422"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to AddTrueShadeRefToMakeups (20140923185603)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "makeups" ADD COLUMN "true_shade_id" integer[0m
+PG::UndefinedTable: ERROR:  relation "makeups" does not exist
+: ALTER TABLE "makeups" ADD COLUMN "true_shade_id" integer
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (4.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (1.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20140919010708)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (6.1ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "name" character varying(255), "email" character varying(255), "password" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140919010708"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddPasswordDigestToUsers (20140919020955)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "users" ADD COLUMN "password_digest" character varying(255)[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140919020955"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateUserMakeups (20140919221947)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (3.5ms)[0m  [1mCREATE TABLE "user_makeups" ("id" serial primary key, "makeup_id" integer, "user_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (1.8ms)[0m  CREATE INDEX "index_user_makeups_on_makeup_id" ON "user_makeups" ("makeup_id")
+  [1m[36m (1.5ms)[0m  [1mCREATE INDEX "index_user_makeups_on_user_id" ON "user_makeups" ("user_id")[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140919221947"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddBrandToUsers (20140920003405)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD COLUMN "brand" character varying(255)[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140920003405"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to AddProductToUsers (20140920003415)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD COLUMN "product" character varying(255)[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140920003415"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to AddShadeToUsers (20140920003422)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD COLUMN "shade" character varying(255)[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140920003422"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Migrating to AddTrueShadeRefToMakeups (20140923185603)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (1.1ms)[0m  [1mALTER TABLE "makeups" ADD COLUMN "true_shade_id" integer[0m
+PG::UndefinedTable: ERROR:  relation "makeups" does not exist
+: ALTER TABLE "makeups" ADD COLUMN "true_shade_id" integer
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddTrueShadeRefToUsers (20140923185949)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "users" ADD COLUMN "true_shade_id" integer[0m
+  [1m[35m (1.1ms)[0m  CREATE INDEX "index_users_on_true_shade_id" ON "users" ("true_shade_id")
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140923185949"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to AddTrueShadeRefToUsers (20140923185949)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (1.2ms)[0m  ALTER TABLE "users" DROP "true_shade_id"
+  [1m[36mSQL (0.8ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20140923185949'[0m
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddTrueShadeRefToUsers (20140923185949)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (2.1ms)[0m  [1mALTER TABLE "users" ADD COLUMN "true_shade_id" integer[0m
+  [1m[35m (1.4ms)[0m  CREATE INDEX "index_users_on_true_shade_id" ON "users" ("true_shade_id")
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140923185949"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Migrating to AddTrueShadeAndMakeupTables (20140923201718)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddTrueShadeAndMakeupTables (20140923201718)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (6.1ms)[0m  [1mCREATE TABLE "makeups" ("id" serial primary key, "brand" character varying(255), "product" character varying(255), "shade" character varying(255), "created_at" timestamp, "updated_at" timestamp, "image" bytea) [0m
+  [1m[35m (5.8ms)[0m  CREATE TABLE "true_shades" ("id" serial primary key, "created_at" timestamp, "updated_at" timestamp, "name" character varying(255), "description" character varying(255)) 
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140923201718"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddTrueShadeRefToMakeups (20140923202449)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "makeups" ADD COLUMN "true_shade_id" integer[0m
+  [1m[35m (2.1ms)[0m  CREATE INDEX "index_makeups_on_true_shade_id" ON "makeups" ("true_shade_id")
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140923202449"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (2.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (1.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20140919010708)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (4.3ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "name" character varying(255), "email" character varying(255), "password" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140919010708"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to AddPasswordDigestToUsers (20140919020955)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "users" ADD COLUMN "password_digest" character varying(255)[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140919020955"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateUserMakeups (20140919221947)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (3.6ms)[0m  [1mCREATE TABLE "user_makeups" ("id" serial primary key, "makeup_id" integer, "user_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (1.0ms)[0m  CREATE INDEX "index_user_makeups_on_makeup_id" ON "user_makeups" ("makeup_id")
+  [1m[36m (1.0ms)[0m  [1mCREATE INDEX "index_user_makeups_on_user_id" ON "user_makeups" ("user_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140919221947"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddBrandToUsers (20140920003405)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" ADD COLUMN "brand" character varying(255)[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140920003405"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddProductToUsers (20140920003415)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD COLUMN "product" character varying(255)[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140920003415"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to AddShadeToUsers (20140920003422)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD COLUMN "shade" character varying(255)[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140920003422"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to AddTrueShadeRefToUsers (20140923185949)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD COLUMN "true_shade_id" integer[0m
+  [1m[35m (0.8ms)[0m  CREATE INDEX "index_users_on_true_shade_id" ON "users" ("true_shade_id")
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140923185949"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Migrating to AddTrueShadeAndMakeupTables (20140923201718)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (3.4ms)[0m  CREATE TABLE "makeups" ("id" serial primary key, "brand" character varying(255), "product" character varying(255), "shade" character varying(255), "created_at" timestamp, "updated_at" timestamp, "image" bytea) 
+  [1m[36m (2.9ms)[0m  [1mCREATE TABLE "true_shades" ("id" serial primary key, "created_at" timestamp, "updated_at" timestamp, "name" character varying(255), "description" character varying(255)) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140923201718"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddTrueShadeRefToMakeups (20140923202449)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "makeups" ADD COLUMN "true_shade_id" integer[0m
+  [1m[35m (0.9ms)[0m  CREATE INDEX "index_makeups_on_true_shade_id" ON "makeups" ("true_shade_id")
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140923202449"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-23 13:28:22 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 2597ms (Views: 2595.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+
+Started GET "/images/f1.jpg" for 127.0.0.1 at 2014-09-23 13:28:25 -0700
+
+ActionController::RoutingError (No route matches [GET] "/images/f1.jpg"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.7ms)
+  Rendered /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (35.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+Processing by UsersController#new as HTML
+  [1m[35mMakeup Load (0.6ms)[0m  SELECT "makeups".* FROM "makeups"
+  Rendered users/new.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 72ms (Views: 27.0ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:28 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "true_shades"
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "makeups"
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (7.7ms)[0m  INSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["description", "Very-fair means you fall in the pale skin color range. You sunburn almost insantly and must have skin protection all the time. Your skin is a porcelain color that is almost clear."], ["name", "Very-Fair"], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["description", "Fair 1 means you fall in the fair skin color range. You sunburn very easily and get freckles when you burn. Your skin is a pale porcelain color with a blue undertone."], ["name", "Fair 1"], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["description", "Fair 2 means you fall in the fair skin color range. You sunburn very easily and get freckles when you burn. Your skin is a pale porcelain color with a green undertone."], ["name", "Fair 2"], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["description", "Fair 3 means you fall in the fair skin color range. You sunburn very easily and get freckles when you burn. Your skin is a pale porcelain color with a pink undertone."], ["name", "Fair 3"], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["description", "Fair-light 4 means you fall in the lightest of light skin color range. You sunburn easily and rarely tan. Your skin is a pale ivory color with a yellow undertone."], ["name", "Fair-light 4"], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["description", "Fair-light 2 means you fall in the lightest of light skin color range. You sunburn easily and rarely tan. Your skin is a pale ivory color with a green undertone."], ["name", "Fair-light 2"], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["description", "Fair-light 3 means you fall in the lightest of light skin color range. You sunburn easily and rarely tan. Your skin is a pale ivory color with a pink undertone."], ["name", "Fair-light 3"], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["description", "Light 4 means you fall in the light skin color range. You sunburn pretty easily but can tan slightly with SPF protection. Your skin is an ivory color with a yellow undertone."], ["name", "Light 4"], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["description", "Light 2 means you fall in the light skin color range. You sunburn pretty easily but can tan slightly with SPF protection. Your skin is an ivory color with a green undertone."], ["name", "Light 2"], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["description", "Light 3 means you fall in the light skin color range. You sunburn pretty easily but can tan slightly with SPF protection. Your skin is an ivory color with a pink undertone."], ["name", "Light 3"], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["description", "Light-medium 4 means you fall in the lightest of medium skin color range. You sunburn pretty easily but can tan with SPF protection. Your skin is a cream/ripe cashew nut kind of color with a yellow undertone."], ["name", "Light-medium 4"], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["description", "Light-medium 5 means you fall in the lightest of medium skin color range. You sunburn pretty easily but can tan with SPF protection. Your skin is a cream/ripe cashew nut kind of color with a neutral undertone."], ["name", "Light-medium 5"], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["description", "Light-medium 3 means you fall in the lightest of medium skin color range. You sunburn pretty easily but can tan with SPF protection. Your skin is a cream/ripe cashew nut kind of color with a pink undertone."], ["name", "Light-medium 3"], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["description", "Medium 4 means you fall in the medium skin color range, common among 80% of women. You sometimes sunburn but tan easily with SPF protection. Your skin is a beige color with a yellow undertone."], ["name", "Medium 4"], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["description", "Medium 5 means you fall in the medium skin color range, common among 80% of women. You sometimes sunburn but tan easily with SPF protection. Your skin is a beige color with a neutral undertone."], ["name", "Medium 5"], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["description", "Medium 3 means you fall in the medium skin color range, common among 80% of women. You sometimes sunburn but tan easily with SPF protection. Your skin is a beige color with a pink undertone."], ["name", "Medium 3"], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["description", "Light-tan 4 means you fall in the light-tan skin color range. You rarely sunburn and always tan. Your skin is an iced coffee kind of color with a yellow undertone."], ["name", "Light-tan 4"], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["description", "Light-tan 2 means you fall in the light-tan skin color range. You rarely sunburn and always tan. Your skin is an iced coffee kind of color with a green undertone."], ["name", "Light-tan 2"], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["description", "Light-tan 6 means you fall in the light-tan skin color range. You rarely sunburn and always tan. Your skin is an iced coffee kind of color with a golden undertone."], ["name", "Light-tan 6"], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["description", "Tan 6 means you fall in the tan skin color range. You rarely sunburn and always tan. Your skin is a caramel color with a golden undertone."], ["name", "Tan 6"], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["description", "Tan 2 means you fall in the tan skin color range. You rarely sunburn and always tan. Your skin is a caramel color with a green undertone."], ["name", "Tan 2"], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["description", "Tan 7 means you fall in the tan skin color range. You rarely sunburn and always tan. Your skin is a caramel color with a red undertone."], ["name", "Tan 7"], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["description", "Dark tan 6 means you fall in the dark tan color range. You rarely sunburn and sometimes tan. Your skin is a milk chocolate color with a golden undertone."], ["name", "Dark tan 6"], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["description", "Dark tan 2 means you fall in the dark tan color range. You rarely sunburn and sometimes tan. Your skin is a milk chocolate color with a green undertone."], ["name", "Dark tan 2"], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["description", "Dark tan 7 means you fall in the dark tan color range. You rarely sunburn and sometimes tan. Your skin is a milk chocolate color with a red undertone."], ["name", "Dark tan 7"], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["description", "Dark brown 6 means you fall in the dark brown skin color range. You do not sunburn nor do you tan. Your skin is mahogany color with a golden undertone.."], ["name", "Dark brown 6"], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["description", "Dark brown 2 means you fall in the dark brown skin color range. You do not sunburn nor do you tan. Your skin is mahogany color with a green undertone."], ["name", "Dark brown 2"], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["description", "Dark brown 7 means you fall in the dark brown skin color range. You do not sunburn nor do you tan. Your skin is mahogany color with red a undertone."], ["name", "Dark brown 7"], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["description", "Deep 8 means you fall in the darkest skin color range. You do not sunburn nor do you tan. Your skin is an espresso color with a blue-black undertone."], ["name", "Deep 8"], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "true_shades" ("created_at", "description", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["description", "Deep 7 means you fall in the darkest skin color range. You do not sunburn nor do you tan. Your skin is an espresso color with a red undertone."], ["name", "Deep 7"], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["brand", "Giorgio Armani"], ["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["product", "Luminous Silk Foundation"], ["shade", "13"], ["true_shade_id", 27], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand", "NARS"], ["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["product", "Sheer Glow Foundation"], ["shade", "Benares"], ["true_shade_id", 27], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["brand", "NARS"], ["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["product", "Sheer Matte Foundation"], ["shade", "Benares"], ["true_shade_id", 27], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand", "Make Up For Ever"], ["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["product", "Mat Velvet + Matifying Foundation"], ["shade", "75"], ["true_shade_id", 27], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["brand", "MAC"], ["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["product", "Matchmaster SPF 15 Foundation"], ["shade", "8"], ["true_shade_id", 27], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand", "e.l.f."], ["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["product", "Studio Flawless Finish Foundation"], ["shade", "Coco #83116"], ["true_shade_id", 27], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["brand", "L’Oreal"], ["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["product", "Magic Skin Beautifier B.B. Cream"], ["shade", "814 Medium"], ["true_shade_id", 20], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand", "L'Oreal"], ["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["product", "True Match Lumi Healthy Foundation"], ["shade", "Buff Beige"], ["true_shade_id", 20], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["brand", "Kat Von D"], ["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["product", "Lock-it Tattoo Foundation"], ["shade", "Medium 54"], ["true_shade_id", 20], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand", "Revlon"], ["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["product", "ColorStay Makeup For Combo/Oily Skin"], ["shade", "350 Rich Tan"], ["true_shade_id", 20], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["brand", "Urban Decay"], ["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["product", "Naked Skin Foundation"], ["shade", "6.0"], ["true_shade_id", 20], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand", "Chanel"], ["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["product", "Vitalumiere Aqua Ultra Light Skin Perfecting Make Up SFP 15"], ["shade", "B30 Sable"], ["true_shade_id", 14], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["brand", "Neutrogena"], ["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["product", "Healthy Skin Liquid Makeup Broad Spectrum SPF 20"], ["shade", "Natural Beige"], ["true_shade_id", 14], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand", "Estee Lauder"], ["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["product", "Double Wear Stay-in-Place Makeup"], ["shade", "Sand 1W2"], ["true_shade_id", 14], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["brand", "Revlon"], ["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["product", "Colorstay Combination/Oily SPF 6"], ["shade", "280 Golden Beige"], ["true_shade_id", 14], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand", "Tarte"], ["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["product", "Powderful Amazonian Clay Pressed Mineral Powder"], ["shade", "Medium 08"], ["true_shade_id", 14], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["brand", "Revlon"], ["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["product", "Nearly Naked"], ["shade", "260 Caramel"], ["true_shade_id", 24], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand", "Liz Earle"], ["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["product", "Signature Foundation"], ["shade", "Caramel 07"], ["true_shade_id", 24], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["brand", "MAC"], ["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["product", "Face and Body Foundation"], ["shade", "C7"], ["true_shade_id", 24], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand", "NARS"], ["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["product", "Sheer Matte"], ["shade", "New Orleans"], ["true_shade_id", 23], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["brand", "MAC"], ["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["product", "Studio Fix Fluid Foundation"], ["shade", "NW45"], ["true_shade_id", 23], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand", "e.l.f."], ["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["product", "Tinted Moisturizer"], ["shade", "Espresso"], ["true_shade_id", 23], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["brand", "Iman"], ["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["product", "Second to None Luminous Foundation"], ["shade", "Earth 2"], ["true_shade_id", 23], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand", "CoverGirl"], ["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["product", "Queen Collection 3 in 1 Foundation"], ["shade", "Q840 Almond Glow"], ["true_shade_id", 26], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["brand", "Revlon"], ["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["product", "ColorStay Makeup For Combo/Oily Skin"], ["shade", "440 Mahogany"], ["true_shade_id", 26], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand", "MAC"], ["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["product", "Studio Sculpt Foundation"], ["shade", "NW20"], ["true_shade_id", 7], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["brand", "Rimmel"], ["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["product", "Wake Me Up Foundation"], ["shade", "True Ivory"], ["true_shade_id", 7], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand", "Make Up For Ever"], ["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["product", "HD Invisible Cover Foundation"], ["shade", "140"], ["true_shade_id", 15], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["brand", "Make Up For Ever"], ["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["product", "Mat Velvet + Matifying Foundation"], ["shade", "40"], ["true_shade_id", 15], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "makeups" ("brand", "created_at", "product", "shade", "true_shade_id", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand", "Urban Decay"], ["created_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00], ["product", "Naked Skin Foundation"], ["shade", "4.0"], ["true_shade_id", 15], ["updated_at", Tue, 23 Sep 2014 20:28:40 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+Processing by UsersController#new as HTML
+  [1m[36mMakeup Load (0.5ms)[0m  [1mSELECT "makeups".* FROM "makeups"[0m
+  Rendered users/new.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 31ms (Views: 26.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 13:28:45 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-23 13:29:03 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"np+SXvUAHRMbVdY6ozc5A58E39hh7u+/RDE9/yTypn4=", "user"=>{"name"=>"Ben", "email"=>"b@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user_makeups_attributes"=>{"0"=>{"user_id"=>"", "makeup_id"=>"21"}}}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (5.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 20:29:03 UTC +00:00], ["email", "b@yahoo.com"], ["name", "Ben"], ["password_digest", "$2a$10$IwiyasE36Hwo2ZtMgckzHO9iTh4msqbhCSdG0vcqW/MerF53rpgG."], ["updated_at", Tue, 23 Sep 2014 20:29:03 UTC +00:00]]
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "user_makeups" ("created_at", "makeup_id", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Tue, 23 Sep 2014 20:29:03 UTC +00:00], ["makeup_id", 21], ["updated_at", Tue, 23 Sep 2014 20:29:03 UTC +00:00], ["user_id", 1]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "user_makeups" ("created_at", "makeup_id", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Tue, 23 Sep 2014 20:29:03 UTC +00:00], ["makeup_id", 21], ["updated_at", Tue, 23 Sep 2014 20:29:03 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mMakeup Load (1.9ms)[0m  [1mSELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mTrueShade Load (0.6ms)[0m  SELECT "true_shades".* FROM "true_shades" WHERE "true_shades"."id" = $1 LIMIT 1  [["id", 23]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "true_shade_id" = $1, "updated_at" = $2 WHERE "users"."id" = 1  [["true_shade_id", 23], ["updated_at", Tue, 23 Sep 2014 20:29:03 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 256ms (ActiveRecord: 14.8ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-09-23 13:29:03 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mMakeup Load (0.6ms)[0m  [1mSELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1  [["user_id", 1]]
+  [1m[36mTrueShade Load (0.3ms)[0m  [1mSELECT "true_shades".* FROM "true_shades" WHERE "true_shades"."id" = $1 LIMIT 1[0m  [["id", 23]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "true_shades".* FROM "true_shades" WHERE "true_shades"."id" = $1 LIMIT 1[0m  [["id", 23]]
+  Rendered users/show.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 34ms (Views: 29.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 13:29:03 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 13:29:03 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 13:29:03 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 13:29:03 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 13:29:03 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 13:29:03 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 13:29:03 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 13:29:03 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 13:29:03 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 13:29:03 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 13:29:03 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 13:29:03 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 13:29:03 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 13:29:03 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 13:29:03 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 13:29:03 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 13:29:03 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 13:29:03 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 13:29:03 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 13:29:03 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 13:29:04 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 13:29:04 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 13:29:04 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 13:29:04 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 13:29:04 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 13:29:04 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 13:29:04 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 13:29:04 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 13:29:04 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 13:29:04 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 13:29:04 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 13:29:04 -0700
