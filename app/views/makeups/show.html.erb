@@ -1,13 +1,21 @@
 <%= @makeup.brand %>
 <%= @makeup.product %>
 <%= @makeup.shade %>
-<%= @makeup do |i| %>
-<%= i.image %>
-<% end %>
+
+<%= @review.rating %>
+<%= @review.comment %>
+
+<%#= form_for [i, @review] do |f| %>
+            <%#= f.text_area :review, placeholder: 'review goes here' %>
+            <%#= f.submit %>
+        <%# end %>
+
 
 
 
 <%= link_to 'Add a makeup', new_makeup_path %>
+
+<%= link_to "Review makeup", new_review_path %>
 
 <%= link_to "Back to makeup list", makeups_path %>
 

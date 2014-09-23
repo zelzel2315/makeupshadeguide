@@ -1,0 +1,8 @@
+<h1>Reviews#new</h1>
+<p>Find me in app/views/reviews/new.html.erb</p>
+
+<%= form_for [i, @review] do |f| %>
+			<%= f.integer_area :rating, placeholder: 'rating' %>
+            <%= f.text_area :comment, placeholder: 'review goes here' %>
+            <%= f.submit %>
+        <% end %>
