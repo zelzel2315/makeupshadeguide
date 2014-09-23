@@ -1,0 +1,15 @@
+<h1>Sessions#new</h1>
+<p>Find me in app/views/sessions/new.html.erb</p>
+
+<div class="allform">
+    <h1>Login</h1>
+
+    <%= form_for @user, {url: session_path} do |f| %>
+<%= f.text_field :email, placeholder: 'Email' %><br>
+<%= f.password_field :password, placeholder: 'Password' %><br>
+  <br>
+<%= f.submit 'Login' %>
+<% end %>
+  </div>
+
+  <%= link_to 'Log Out', session_path, method: :delete %>

@@ -1,0 +1,12 @@
+User form
+
+<%= form_for @user do |f| %>
+	
+
+	<%= f.collection_select :brand, Makeup.all, :id, :brand, placeholder: "Brand" %>
+	<%= f.collection_select :product, Makeup.all, :id, :product, placeholder: "Product" %>
+	<%= f.collection_select :shade, Makeup.all, :id, :shade, placeholder: "Shade" %>
+
+	<%= f.submit "Add to my collection" %>
+
+<% end %>

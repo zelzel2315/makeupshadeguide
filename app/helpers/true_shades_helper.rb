@@ -1,0 +1,2 @@
+module TrueShadesHelper
+end

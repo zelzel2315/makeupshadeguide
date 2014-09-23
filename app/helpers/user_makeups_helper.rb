@@ -1,0 +1,2 @@
+module UserMakeupsHelper
+end

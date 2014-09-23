@@ -1,0 +1,24 @@
+Makeup form
+
+<%= form_for @makeup do |f| %>
+	<% if @makeup.errors.any? %>
+	<div id="error_explanation">
+		<h2><%= pluralize.(@makeup.errors.count, "error") %>
+			prohibited this makeup from being saved:</h2>
+			<ul>
+				<% @makeup.errors.full.messages.each do |message| %>
+				<li><%= message %></li>
+				<% end %>
+			</ul>
+		</div>
+		<% end %>
+
+	<%= f.text_field :brand, placeholder: "Brand" %>
+	<%= f.text_field :product, placeholder: "Product" %>
+	<%= f.text_field :shade, placeholder: "Shade" %>
+
+	<%= f.submit "Submit" %>
+
+<% end %>
+
+<%= link_to "Back to makeup list", makeups_path %>
