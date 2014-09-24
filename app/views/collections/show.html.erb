@@ -1,0 +1,9 @@
+<h1>Collections#show</h1>
+<p>Find me in app/views/collections/show.html.erb</p>
+
+<h3> This is your collection list </h3>
+<% @user.makeups.each do |m| %>
+  <%= m.brand %> <br>
+  <%= m.product %> <br>
+  <%= m.shade %> <br>
+<% end %> 

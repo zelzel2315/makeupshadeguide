@@ -1,5 +1,6 @@
 MUSGFinal2::Application.routes.draw do
  
+  resources :collections
   resources :true_shades
   resources :makeups
   resources :users

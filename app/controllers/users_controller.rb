@@ -22,7 +22,7 @@ class UsersController < ApplicationController
     puts params[:user]
 
       if @user.save
-        UserMakeup.create(makeup_id: params[:user][:user_makeups_attributes][:'0'][:makeup_id], user_id: @user.id)
+        # UserMakeup.create(makeup_id: params[:user][:user_makeups_attributes][:'0'][:makeup_id], user_id: @user.id)
         @my_makeup = @user.makeups.first
         # @my_makeup = Makeup.where(makeup_id: @user.makeup_id).first
         @user.update(true_shade: @my_makeup.true_shade)
@@ -45,7 +45,8 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    
+    @user_makeup = @user.user_makeups.where(owns: true)
+    @user_collection = @user.user_makeups.where(owns: false)
   end
 
   def edit
