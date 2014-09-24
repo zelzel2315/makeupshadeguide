@@ -6,14 +6,18 @@ class ReviewsController < ApplicationController
 
   def new
     @review = Review.new
+    puts "XXXXXXXXXXX"
+    puts params
   end
  
   def create
+    puts "XXXXXXXXXXX"
+    puts params
     @makeup = Makeup.find(params[:makeup_id])
     @review = current_user.reviews.new(review_params)
     @review.makeup_id = @makeup.id
     if @review.save
-      redirect_to makeup_path
+      redirect_to makeup_path(@makeup.id)
     else
       render 'new'
     end
@@ -38,7 +42,7 @@ class ReviewsController < ApplicationController
 
   private
   def review_params
-    params.require(:review).permit(:rating, :comment, :makeup_id)
+    params.require(:review).permit(:rating, :comment, :makeup_id, :user_id)
 
   end
 
