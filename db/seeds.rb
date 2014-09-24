@@ -36,12 +36,12 @@ ts = TrueShade.create([
   ])
  
 makeups = Makeup.create([
-  {brand: "Giorgio Armani", product: "Luminous Silk Foundation", shade: "13", true_shade_id: ts[26].id},
-  {brand: "NARS", product: "Sheer Glow Foundation", shade: "Benares", true_shade_id: ts[26].id},
-  {brand: "NARS", product: "Sheer Matte Foundation", shade: "Benares", true_shade_id: ts[26].id},
-  {brand: "Make Up For Ever", product: "Mat Velvet + Matifying Foundation", shade: "75", true_shade_id: ts[26].id},
-  {brand: "MAC", product: "Matchmaster SPF 15 Foundation", shade: "8", true_shade_id: ts[26].id},
-  {brand: "e.l.f.", product: "Studio Flawless Finish Foundation", shade: "Coco #83116", true_shade_id: ts[26].id}, 
+  {brand: "Giorgio Armani", product: "Luminous Silk Foundation", shade: "13", true_shade_id: ts[26].id, image: "GiorgioArmani.jpg"},
+  {brand: "NARS", product: "Sheer Glow Foundation", shade: "Benares", true_shade_id: ts[26].id, image:""},
+  {brand: "NARS", product: "Sheer Matte Foundation", shade: "Benares", true_shade_id: ts[26].id, image:""},
+  {brand: "Make Up For Ever", product: "Mat Velvet + Matifying Foundation", shade: "75", true_shade_id: ts[26].id, image:""},
+  {brand: "MAC", product: "Matchmaster SPF 15 Foundation", shade: "8", true_shade_id: ts[26].id, image:""},
+  {brand: "e.l.f.", product: "Studio Flawless Finish Foundation", shade: "Coco #83116", true_shade_id: ts[26].id, image:""}, 
   {brand: "L’Oreal", product: "Magic Skin Beautifier B.B. Cream", shade: "814 Medium", true_shade_id: ts[19].id},
   {brand: "L'Oreal", product: "True Match Lumi Healthy Foundation", shade: "Buff Beige", true_shade_id: ts[19].id},
   {brand: "Kat Von D", product: "Lock-it Tattoo Foundation", shade: "Medium 54", true_shade_id: ts[19].id},
