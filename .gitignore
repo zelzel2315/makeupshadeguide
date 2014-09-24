@@ -13,6 +13,8 @@
 
 # Ignore all logfiles and tempfiles.
 /log
+logs
+file.log
 /tmp
 /vendor
 .env
