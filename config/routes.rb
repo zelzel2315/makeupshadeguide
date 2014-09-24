@@ -8,7 +8,7 @@ MUSGFinal2::Application.routes.draw do
   resources :reviews
   resources :user_makeups
 
-  # comment testing
+  # testing testing
   
   scope '/api' do
     resources :makeups, only: :static, defaults: { format: :json }
