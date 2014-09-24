@@ -1,27 +1,70 @@
-<h2><%= @makeup.brand %>
-<br><%= @makeup.product %>
-<br><%= @makeup.shade %></h2>
 
-<%#= @review.rating %>
-<%#= @review.comment %>
+<!-- form for review -->
+ <div class="row">
+    <div class="large-12 columns">
+      <div class="panel">
+        <!-- Users makeup pick -->
+        <h2><%= @makeup.brand %>
+        <br><%= @makeup.product %>
+        <br><%= @makeup.shade %></h2>
+      </div>
+    </div>
+  </div>
+   
+  <div class="row">
+    <div class="large-5 columns ">
+      <div class="panel">
+        <a href="#"><img src="http://placehold.it/300x240&text=[img]"/></a>
+        <h5><a href="#">
+          <%= @makeup.brand %>
+          <br>
+          <%= @makeup.product %></a>
+        </h5>
+          <div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
+         </div>
+      </div>
+    </div>
+      
+    <div class="large-6 columns">
+      <hr/>
+      <div class="row">
+        <div class="large-12 columns">
+          <% @makeup.reviews.each do |review| %>
+          Review:  "<%= review.comment %>"<br>
+          Rating:   <%= review.rating %><br>
+          -- <%= review.user.name %><br>
+      <hr/>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+ 
+     
+<!--     <aside class="large-3 columns hide-for-small">
+      <p><img src="http://placehold.it/300x440&text=[ad]"/></p>
+      <p><img src="http://placehold.it/300x440&text=[ad]"/></p>
+    </aside> -->
 
-<%#= form_for [i, @review] do |f| %>
-            <%#= f.text_area :review, placeholder: 'review goes here' %>
-            <%#= f.submit %>
-        <%# end %>
+  <br><%= link_to 'Add a makeup', new_makeup_path, :class => 'small button radius' %>
+  <br>
+  <br><%= link_to "Review makeup", new_review_path(makeup_id: @makeup.id), :class => 'small button radius' %>
+  <br>
+  <br><%= link_to "Back to makeup list", makeups_path, :class => 'small button radius' %>
+  <br>
+  <br>
+</div>
+   
+  
+  <footer class="row">
 
-<br><% @makeup.reviews.each do |review| %>
-	<%= review.comment %><br>
-	<%= review.rating %><br>
-	- <%= review.user.name %><br>
-<% end %>
-
-
-
-<br><%= link_to 'Add a makeup', new_makeup_path %>
-
-<br><%= link_to "Review makeup", new_review_path(makeup_id: @makeup.id) %>
-
-<br><%= link_to "Back to makeup list", makeups_path %>
-
-<br><%#= link_to "Back to your list", user_path %>
+      <hr/>
+     
+        <div class="large-5 columns">
+          <p>© Copyright MakeupShadeGuide.</p>
+        </div>
+       
+      </div>
+    </div>
+  </footer>

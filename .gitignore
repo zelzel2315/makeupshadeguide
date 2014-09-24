@@ -12,6 +12,8 @@
 /db/*.sqlite3-journal
 
 # Ignore all logfiles and tempfiles.
+
+/log/development.log
 /log
 logs
 file.log
@@ -19,3 +21,4 @@ file.log
 /vendor
 .env
 .env
+/sprockets/
