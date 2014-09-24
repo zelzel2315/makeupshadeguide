@@ -20,6 +20,8 @@ Hello <%= current_user.name %>,
   <%= m.product %> <br>
   <%= m.shade %> <br>
 <% end %>
+<br>
+<br>
 
-
+<%= link_to 'Log Out', session_path, method: :delete %>
 
