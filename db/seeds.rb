@@ -36,6 +36,7 @@ ts = TrueShade.create([
   ])
  
 makeups = Makeup.create([
+
   {brand: "Giorgio Armani", product: "Luminous Silk Foundation", shade: "13", true_shade_id: ts[26].id, image: "GiorgioArmani.jpg"},
   {brand: "NARS", product: "Sheer Glow Foundation", shade: "Benares", true_shade_id: ts[26].id, image:"NarsSheerGlow.jpg"},
   {brand: "NARS", product: "Sheer Matte Foundation", shade: "Benares", true_shade_id: ts[26].id, image:"NarsSheerMatte.jpg"},
@@ -85,20 +86,14 @@ makeups = Makeup.create([
 
 
 
-# reviews = Review.create([
-#   {foundation_id: "Tarte Powderful Amazonian Clay Pressed Mineral Powder Medium 08", rating: "4", comment: "It's a lightweight powder that goes on lightly as well. Good for basic everyday use, but not for heavy duty coverup. Matches pretty well."},
-#   # {foundation_id: "Tarte Powderful Amazonian Clay Pressed Mineral Powder Medium 08", rating: "4", comment: "It's a lightweight powder that goes on lightly as well. Good for basic everyday use, but not for heavy duty coverup. Matches pretty well."},
-#   # {foundation_id: "Tarte Powderful Amazonian Clay Pressed Mineral Powder Medium 08", rating: "4", comment: "It's a lightweight powder that goes on lightly as well. Good for basic everyday use, but not for heavy duty coverup. Matches pretty well."},
+reviews = Review.create([
+  {makeups_id: "Tarte Powderful Amazonian Clay Pressed Mineral Powder Medium 08", rating: "4", comment: "It's a lightweight powder that goes on lightly as well. Good for basic everyday use, but not for heavy duty coverup. Matches pretty well.", user_id: "Jean"},
+  {makeups_id: "MAC Studio Sculpt Foundation NC35", rating: "4", comment: "I feel it matches really well. They matched me while I was there and have used the same one for 3 years now.", user_id: "Dani"},
+  {makeups_id: "Maybelline Fit Me Shine-Free Foundation Sun Beige 310", rating: "5", comment: "It blends in really good, almost exact color as my skin.", user_id: "Barbara"},
 #   # {foundation_id: "Tarte Powderful Amazonian Clay Pressed Mineral Powder Medium 08", rating: "4", comment: "It's a lightweight powder that goes on lightly as well. Good for basic everyday use, but not for heavy duty coverup. Matches pretty well."},
 #   # {foundation_id: "Tarte Powderful Amazonian Clay Pressed Mineral Powder Medium 08", rating: "4", comment: "It's a lightweight powder that goes on lightly as well. Good for basic everyday use, but not for heavy duty coverup. Matches pretty well."},
 #   # {foundation_id: "Tarte Powderful Amazonian Clay Pressed Mineral Powder Medium 08", rating: "4", comment: "It's a lightweight powder that goes on lightly as well. Good for basic everyday use, but not for heavy duty coverup. Matches pretty well."}
 
 
-# ])
-
-# 1. clinique, perfectly real makeup, shade 24
-# 2. 3
-# 3. “The shade has too many red undertones. Being asian, it’s too peachy.” -Kara
-
-# Bobbi Brown BB Cream SPF 35 Medium 5!
+])
 
