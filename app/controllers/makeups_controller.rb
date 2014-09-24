@@ -3,8 +3,13 @@ class MakeupsController < ApplicationController
 
   def index
     @makeups = Makeup.where(true_shade_id: current_user.true_shade_id)
-    # respond_with @makeups, each_serializer: MakeupSerializer
   end
+
+  def static
+    @makeups = Makeup.all
+    respond_with @makeups, each_serializer: MakeupsSerializer
+  end
+
 
   def new
     @makeup = Makeup.new
@@ -30,6 +35,8 @@ class MakeupsController < ApplicationController
   def show
     @makeup = Makeup.find(params[:id])
     @review = Review.new
+
+  
     # @image = Makeup.find(params[:image])
   end
 
@@ -75,5 +82,4 @@ class MakeupsController < ApplicationController
     params.require(:makeup).permit(:brand, :product, :shade, :user_id, :makeup_id)
   end
   
-
 end
