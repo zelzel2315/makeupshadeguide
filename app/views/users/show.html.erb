@@ -1,10 +1,7 @@
 Hello <%= current_user.name %>,
 
 
-<h3> Your make-up is </h3>
-<%= @user.makeups.first.brand %> <br/>
-<%= @user.makeups.first.product %><br/>
-<%= @user.makeups.first.shade %>
+
 <br><%= link_to 'Add new makeup', makeups_path %>
 <br>
 <br>

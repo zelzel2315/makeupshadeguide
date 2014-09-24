@@ -6,7 +6,8 @@ class UsersController < ApplicationController
 
   def new 
     @user = User.new
-    @user.user_makeups.build
+    @user.user_makeups.build.inspect
+
     # @user.user_makeups.build(name: '1').build_makeup
     # @user.user_makeups.build(name: '2').build_makeup
     # @makeup_list = Array.new
@@ -22,7 +23,8 @@ class UsersController < ApplicationController
     puts params[:user]
 
       if @user.save
-        UserMakeup.create(makeup_id: params[:user][:user_makeups_attributes][:'0'][:makeup_id], user_id: @user.id)
+        # UserMakeup.create(makeup_id: params[:user][:user_makeups_attributes][:'0'][:makeup_id], user_id: @user.id)
+        
         @my_makeup = @user.makeups.first
         # @my_makeup = Makeup.where(makeup_id: @user.makeup_id).first
         @user.update(true_shade: @my_makeup.true_shade)
