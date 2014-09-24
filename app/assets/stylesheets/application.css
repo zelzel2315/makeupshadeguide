@@ -16,14 +16,108 @@
 
 @import url(http://fonts.googleapis.com/css?family=Rock+Salt);
 
- h1 {
-  font-family: 'Rock Salt', cursive;
+
+.welcomephoto {
+  background-size: cover;
+  background-image: url("coverphoto.jpg");
+  background-repeat: no-repeat;
+  height: 805px;
+
 }
 
-.users {
-  margin-left: 88%;
+#logo {
+  float: left;
 }
 
-#headcontain {
-  margin-left: 33px;
+ul {
+  display: inline;
+  padding: 0;
+  margin: 0;
 }
+/*.homepagepicture {
+  height: 400px;
+  width: 600px;
+  background-image: url(f1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}*/
+
+.aboutUs {
+  width: 75%;
+  height: 200px;
+  text-align: justify;
+  color: white;
+  margin: 0 auto;
+  margin-top: 400px;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.aboutUsContent {
+  font-size: 26px;
+}
+
+
+#signinTitle {
+  height: 200px;
+
+}
+h1.landtitle {
+  text-align: left;
+  margin-bottom: 50px;
+  font-family: 'Rock Salt', cursive !important;
+}
+
+
+
+
+
+.form-group {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+}
+
+#signinform {
+  width: 300px;
+  height: auto;
+  text-align: center;
+}
+
+#poster1 {
+  height: 400px;
+  width: 530px;
+  margin: 0 420px;
+  position: fixed;
+  background-image: url("foundation6.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#poster2 {
+  height: 400px;
+  width: 530px;
+  margin: 0 420px;
+  position: fixed;
+  background-image: url("foundation2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
