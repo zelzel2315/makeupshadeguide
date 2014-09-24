@@ -1,7 +1,11 @@
 class ReviewsController < ApplicationController
+    respond_to :json
+
   def index
     @reviews = Review.new
     @makeups = Makeup.all
+    respond_with @reviews, each_serializer: ReviewsSerializer
+
   end
 
   def new
