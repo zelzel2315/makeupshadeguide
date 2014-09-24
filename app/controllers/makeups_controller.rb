@@ -2,8 +2,7 @@ class MakeupsController < ApplicationController
   respond_to :json
 
   def index
-    # @makeups = Makeup.where(true_shade_id: current_user.true_shade_id)
-    @makeups = Makeup.all
+    @makeups = Makeup.where(true_shade_id: current_user.true_shade_id)
   end
 
   def static
