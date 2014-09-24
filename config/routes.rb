@@ -11,7 +11,7 @@ MUSGFinal2::Application.routes.draw do
   # testing testing
   
   scope '/api' do
-    resources :makeups, only: :static, defaults: { format: :json }
+    resources :makeups, defaults: { format: :json }
     resources :reviews, defaults: { format: :json }
     resource :static, defaults:   { format: :json }
   end 
