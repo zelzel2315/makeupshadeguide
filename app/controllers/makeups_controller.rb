@@ -1,9 +1,8 @@
 class MakeupsController < ApplicationController
   respond_to :json
-  # before_action :set_makeup, only: [:show, :edit, :update, :destroy]
 
   def index
-    @makeups = Makeup.all
+    @makeups = Makeup.where(true_shade_id: current_user.true_shade_id)
     # respond_with @makeups, each_serializer: MakeupSerializer
   end
 
