@@ -52862,4 +52862,5 @@ Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 18:59:2
 Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 18:59:21 -0700
 
 
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 18:59:21 -0700
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 18:59:21 -0700 
+
