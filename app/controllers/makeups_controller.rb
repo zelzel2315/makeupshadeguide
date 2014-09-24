@@ -30,6 +30,8 @@ class MakeupsController < ApplicationController
   def show
     @makeup = Makeup.find(params[:id])
     @review = Review.new
+
+  
     # @image = Makeup.find(params[:image])
   end
 

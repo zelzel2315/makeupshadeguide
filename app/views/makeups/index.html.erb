@@ -1,7 +1,7 @@
 <h1>Makeups#index</h1>
 <p>Find me in app/views/makeups/index.html.erb</p>
 
-<%= link_to 'Add a makeup', new_makeup_path %>
+<%= link_to 'Add a makeup to your true shade', new_makeup_path %>
 
 <table>
   <thead>
@@ -21,7 +21,8 @@
         <td><%= makeup.shade %></td>
         <td><%= link_to 'Show', makeup %></td>
         <td><%= link_to 'Edit', edit_makeup_path(makeup) %></td>
-        <td><%= link_to 'Destroy', makeup, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Add to collection', user_makeups_path(makeup_id: makeup.id), method: :post %></td>
+        <!-- <td><%#= link_to 'Destroy', makeup, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
       </tr>
     <% end %>
   </tbody>
