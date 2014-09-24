@@ -65,6 +65,7 @@ ul {
 h1.landtitle {
   text-align: left;
   margin-bottom: 50px;
+  font-size: 58px;
   font-family: 'Rock Salt', cursive !important;
 }
 
@@ -99,7 +100,7 @@ h1.landtitle {
   width: 530px;
   margin: 0 420px;
   position: fixed;
-  background-image: url("foundation2.jpg");
+  background-image: url("foundation4.jpg");
   background-size: contain;
   background-repeat: no-repeat;
 }
