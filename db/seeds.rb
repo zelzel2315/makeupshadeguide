@@ -45,6 +45,7 @@ makeups = Makeup.create([
   {brand: "L’Oreal", product: "Magic Skin Beautifier B.B. Cream", shade: "814 Medium", true_shade_id: ts[19].id},
   {brand: "L'Oreal", product: "True Match Lumi Healthy Foundation", shade: "Buff Beige", true_shade_id: ts[19].id},
   {brand: "Kat Von D", product: "Lock-it Tattoo Foundation", shade: "Medium 54", true_shade_id: ts[19].id},
+  {brand: "MAC", product: "Studio Sculpt Foundation", shade: "NC35", true_shade_id: ts[19].id},
   {brand: "Revlon", product: "ColorStay Makeup For Combo/Oily Skin", shade: "350 Rich Tan", true_shade_id: ts[19].id},
   {brand: "Urban Decay", product: "Naked Skin Foundation", shade: "6.0", true_shade_id: ts[19].id},
   {brand: "Chanel", product: "Vitalumiere Aqua Ultra Light Skin Perfecting Make Up SFP 15", shade: "B30 Sable", true_shade_id: ts[13].id},
@@ -66,7 +67,9 @@ makeups = Makeup.create([
   # {name: "Bobbi Brown BB Cream SPF 35 Medium", brand: "Bobbi", product: "Brown BB Cream SPF 35", shade: "Medium", true_shade_id: ts[19].id},
   {brand: "Make Up For Ever", product: "HD Invisible Cover Foundation", shade: "140", true_shade_id: ts[14].id},
   {brand: "Make Up For Ever", product: "Mat Velvet + Matifying Foundation", shade: "40", true_shade_id: ts[14].id},
-  {brand: "Urban Decay", product: "Naked Skin Foundation", shade: "4.0", true_shade_id: ts[14].id}
+  {brand: "Urban Decay", product: "Naked Skin Foundation", shade: "4.0", true_shade_id: ts[14].id},
+  {brand: "Maybelline", product: "Fit Me Shine-Free Foundation", shade: "Sun Beige 310", true_shade_id: ts[14].id},
+
   ])
 
 
@@ -85,20 +88,14 @@ makeups = Makeup.create([
 
 
 
-# reviews = Review.create([
-#   {foundation_id: "Tarte Powderful Amazonian Clay Pressed Mineral Powder Medium 08", rating: "4", comment: "It's a lightweight powder that goes on lightly as well. Good for basic everyday use, but not for heavy duty coverup. Matches pretty well."},
-#   # {foundation_id: "Tarte Powderful Amazonian Clay Pressed Mineral Powder Medium 08", rating: "4", comment: "It's a lightweight powder that goes on lightly as well. Good for basic everyday use, but not for heavy duty coverup. Matches pretty well."},
-#   # {foundation_id: "Tarte Powderful Amazonian Clay Pressed Mineral Powder Medium 08", rating: "4", comment: "It's a lightweight powder that goes on lightly as well. Good for basic everyday use, but not for heavy duty coverup. Matches pretty well."},
+reviews = Review.create([
+  {makeups_id: "Tarte Powderful Amazonian Clay Pressed Mineral Powder Medium 08", rating: "4", comment: "It's a lightweight powder that goes on lightly as well. Good for basic everyday use, but not for heavy duty coverup. Matches pretty well.", user_id: "Jean"},
+  {makeups_id: "MAC Studio Sculpt Foundation NC35", rating: "4", comment: "I feel it matches really well. They matched me while I was there and have used the same one for 3 years now.", user_id: "Dani"},
+  {makeups_id: "Maybelline Fit Me Shine-Free Foundation Sun Beige 310", rating: "5", comment: "It blends in really good, almost exact color as my skin.", user_id: "Barbara"},
 #   # {foundation_id: "Tarte Powderful Amazonian Clay Pressed Mineral Powder Medium 08", rating: "4", comment: "It's a lightweight powder that goes on lightly as well. Good for basic everyday use, but not for heavy duty coverup. Matches pretty well."},
 #   # {foundation_id: "Tarte Powderful Amazonian Clay Pressed Mineral Powder Medium 08", rating: "4", comment: "It's a lightweight powder that goes on lightly as well. Good for basic everyday use, but not for heavy duty coverup. Matches pretty well."},
 #   # {foundation_id: "Tarte Powderful Amazonian Clay Pressed Mineral Powder Medium 08", rating: "4", comment: "It's a lightweight powder that goes on lightly as well. Good for basic everyday use, but not for heavy duty coverup. Matches pretty well."}
 
 
-# ])
-
-# 1. clinique, perfectly real makeup, shade 24
-# 2. 3
-# 3. “The shade has too many red undertones. Being asian, it’s too peachy.” -Kara
-
-# Bobbi Brown BB Cream SPF 35 Medium 5!
+])
 
