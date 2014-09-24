@@ -52864,3 +52864,4417 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 18:59:21 -0700
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 18:59:21 -0700 
 
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-23 19:21:49 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 1654ms (Views: 1653.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 40ms (Views: 39.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+
+Started GET "/images/f1.jpg" for 127.0.0.1 at 2014-09-23 19:21:51 -0700
+
+ActionController::RoutingError (No route matches [GET] "/images/f1.jpg"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
+  Rendered /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.3ms)
+  Rendered /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (36.9ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-23 19:21:53 -0700
+Processing by UsersController#new as HTML
+  [1m[35mMakeup Load (0.7ms)[0m  SELECT "makeups".* FROM "makeups"
+  Rendered users/new.html.erb within layouts/application (35.7ms)
+Completed 200 OK in 86ms (Views: 42.6ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 19:21:53 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 19:21:53 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 19:21:53 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:21:53 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 19:21:53 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:21:53 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 19:21:53 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:53 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:53 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:54 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:54 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:54 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:54 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:54 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:54 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:54 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:54 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:54 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:54 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:54 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:54 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:54 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:54 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:54 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:54 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:54 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:54 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:54 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:54 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:54 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:54 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:54 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:54 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 19:21:54 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"np+SXvUAHRMbVdY6ozc5A58E39hh7u+/RDE9/yTypn4=", "user"=>{"name"=>"tomato", "email"=>"tom@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user_makeups_attributes"=>{"0"=>{"user_id"=>"", "makeup_id"=>"1"}}}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (7.1ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Wed, 24 Sep 2014 02:22:14 UTC +00:00], ["email", "tom@yahoo.com"], ["name", "tomato"], ["password_digest", "$2a$10$l//ESdOqf3Y3gQ6SO8bYoeSUnIQS3YyD5oHobm.O7keZwuz6EjsKO"], ["updated_at", Wed, 24 Sep 2014 02:22:14 UTC +00:00]]
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "user_makeups" ("created_at", "makeup_id", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Wed, 24 Sep 2014 02:22:14 UTC +00:00], ["makeup_id", 1], ["updated_at", Wed, 24 Sep 2014 02:22:14 UTC +00:00], ["user_id", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "user_makeups" ("created_at", "makeup_id", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Wed, 24 Sep 2014 02:22:14 UTC +00:00], ["makeup_id", 1], ["updated_at", Wed, 24 Sep 2014 02:22:14 UTC +00:00], ["user_id", 3]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mMakeup Load (1.3ms)[0m  SELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1  [["user_id", 3]]
+  [1m[36mTrueShade Load (0.5ms)[0m  [1mSELECT "true_shades".* FROM "true_shades" WHERE "true_shades"."id" = $1 LIMIT 1[0m  [["id", 27]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "users" SET "true_shade_id" = $1, "updated_at" = $2 WHERE "users"."id" = 3[0m  [["true_shade_id", 27], ["updated_at", Wed, 24 Sep 2014 02:22:14 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 147ms (ActiveRecord: 14.5ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "3"]]
+  [1m[36mMakeup Load (0.6ms)[0m  [1mSELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1[0m  [["user_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1  [["user_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1[0m  [["user_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1  [["user_id", 3]]
+  [1m[36mTrueShade Load (0.3ms)[0m  [1mSELECT "true_shades".* FROM "true_shades" WHERE "true_shades"."id" = $1 LIMIT 1[0m  [["id", 27]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1  [["user_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "true_shades".* FROM "true_shades" WHERE "true_shades"."id" = $1 LIMIT 1[0m  [["id", 27]]
+  Rendered users/show.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 85ms (Views: 80.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:14 -0700
+
+
+Started GET "/makeups" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+Processing by MakeupsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "3"]]
+  [1m[36mMakeup Load (0.4ms)[0m  [1mSELECT "makeups".* FROM "makeups" WHERE "makeups"."true_shade_id" = 27[0m
+  Rendered makeups/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 22ms (Views: 15.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:19 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:20 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:20 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:20 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:20 -0700
+
+
+Started GET "/makeups/6" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+Processing by MakeupsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mMakeup Load (0.5ms)[0m  SELECT "makeups".* FROM "makeups" WHERE "makeups"."id" = $1 LIMIT 1  [["id", "6"]]
+  [1m[36mReview Load (2.5ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."makeup_id" = $1[0m  [["makeup_id", 6]]
+  Rendered makeups/show.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 31ms (Views: 16.0ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:25 -0700
+
+
+Started GET "/reviews/new?makeup_id=6" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"makeup_id"=>"6"}
+  Rendered reviews/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:28 -0700
+
+
+Started POST "/reviews" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"np+SXvUAHRMbVdY6ozc5A58E39hh7u+/RDE9/yTypn4=", "review"=>{"rating"=>"4", "comment"=>"looking good"}, "makeup_id"=>"6", "commit"=>"Create Review"}
+  [1m[35mMakeup Load (0.9ms)[0m  SELECT "makeups".* FROM "makeups" WHERE "makeups"."id" = $1 LIMIT 1  [["id", "6"]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "reviews" ("comment", "created_at", "makeup_id", "rating", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["comment", "looking good"], ["created_at", Wed, 24 Sep 2014 02:22:36 UTC +00:00], ["makeup_id", 6], ["rating", 4], ["updated_at", Wed, 24 Sep 2014 02:22:36 UTC +00:00], ["user_id", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/makeups/6
+Completed 302 Found in 23ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/makeups/6" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+Processing by MakeupsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mMakeup Load (0.3ms)[0m  [1mSELECT "makeups".* FROM "makeups" WHERE "makeups"."id" = $1 LIMIT 1[0m  [["id", "6"]]
+  [1m[35mReview Load (0.8ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."makeup_id" = $1  [["makeup_id", 6]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered makeups/show.html.erb within layouts/application (65.3ms)
+Completed 200 OK in 80ms (Views: 76.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 19:22:36 -0700
+
+
+Started GET "/users/6" for 127.0.0.1 at 2014-09-23 19:25:13 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "6"]]
+Completed 500  in 4ms
+
+ActiveRecord::RecordNotFound - Couldn't find User with id=6:
+  activerecord (4.0.4) lib/active_record/relation/finder_methods.rb:199:in `raise_record_not_found_exception!'
+  activerecord (4.0.4) lib/active_record/relation/finder_methods.rb:285:in `find_one'
+  activerecord (4.0.4) lib/active_record/relation/finder_methods.rb:269:in `find_with_ids'
+  activerecord (4.0.4) lib/active_record/relation/finder_methods.rb:36:in `find'
+  activerecord-deprecated_finders (1.0.3) lib/active_record/deprecated_finders/relation.rb:122:in `find'
+  activerecord (4.0.4) lib/active_record/querying.rb:3:in `find'
+  app/controllers/users_controller.rb:47:in `show'
+  actionpack (4.0.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.4) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.4) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:373:in `_run__283375584913885679__process_action__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.4) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.4) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.4) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:674:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/app_request_handler.rb:13:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/meta_request_handler.rb:13:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.4) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:373:in `_run__1431982161418296444__call__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  rack-contrib (1.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/headers.rb:16:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/85a8a8c169a54282/variables" for 127.0.0.1 at 2014-09-23 19:25:13 -0700
+
+
+Started GET "/makeups/new" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+Processing by MakeupsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  Rendered makeups/_form.html.erb (1.8ms)
+  Rendered makeups/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 18ms (Views: 13.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:16 -0700
+
+
+Started GET "/makeups" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+Processing by MakeupsController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "3"]]
+  [1m[36mMakeup Load (0.4ms)[0m  [1mSELECT "makeups".* FROM "makeups" WHERE "makeups"."true_shade_id" = 27[0m
+  Rendered makeups/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 19ms (Views: 13.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:18 -0700
+
+
+Started DELETE "/session" for 127.0.0.1 at 2014-09-23 19:25:19 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"np+SXvUAHRMbVdY6ozc5A58E39hh7u+/RDE9/yTypn4="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-23 19:25:19 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 23ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:19 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:19 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:19 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:19 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:19 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:19 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:19 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:20 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:20 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:20 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:20 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:20 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:20 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:20 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:20 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:20 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:20 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:20 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:20 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:20 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:20 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:20 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:20 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:20 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:20 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:20 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:20 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:20 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:20 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:20 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:20 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:20 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:20 -0700
+
+
+Started GET "/images/f1.jpg" for 127.0.0.1 at 2014-09-23 19:25:20 -0700
+
+ActionController::RoutingError (No route matches [GET] "/images/f1.jpg"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (24.5ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+Processing by UsersController#new as HTML
+  [1m[35mMakeup Load (0.5ms)[0m  SELECT "makeups".* FROM "makeups"
+  Rendered users/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:24 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-23 19:25:50 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"doCJl3wftmyfNhERKy3sWiy2E1Y0zk6Gy29mWOUkKSE=", "user"=>{"name"=>"Eric", "email"=>"E@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user_makeups_attributes"=>{"0"=>{"user_id"=>"", "makeup_id"=>"1"}}}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Wed, 24 Sep 2014 02:25:50 UTC +00:00], ["email", "E@yahoo.com"], ["name", "Eric"], ["password_digest", "$2a$10$MLU0zbry.ZUrxqqEqfYYouSXKh3iAXbN1gkqCzrA1bp5pfqIWMBAu"], ["updated_at", Wed, 24 Sep 2014 02:25:50 UTC +00:00]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "user_makeups" ("created_at", "makeup_id", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Wed, 24 Sep 2014 02:25:50 UTC +00:00], ["makeup_id", 1], ["updated_at", Wed, 24 Sep 2014 02:25:50 UTC +00:00], ["user_id", 4]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "user_makeups" ("created_at", "makeup_id", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Wed, 24 Sep 2014 02:25:50 UTC +00:00], ["makeup_id", 1], ["updated_at", Wed, 24 Sep 2014 02:25:50 UTC +00:00], ["user_id", 4]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mMakeup Load (0.8ms)[0m  SELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1  [["user_id", 4]]
+  [1m[36mTrueShade Load (0.4ms)[0m  [1mSELECT "true_shades".* FROM "true_shades" WHERE "true_shades"."id" = $1 LIMIT 1[0m  [["id", 27]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "true_shade_id" = $1, "updated_at" = $2 WHERE "users"."id" = 4[0m  [["true_shade_id", 27], ["updated_at", Wed, 24 Sep 2014 02:25:50 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 110ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2014-09-23 19:25:50 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mMakeup Load (0.5ms)[0m  [1mSELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1[0m  [["user_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1  [["user_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1[0m  [["user_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1  [["user_id", 4]]
+  [1m[36mTrueShade Load (0.3ms)[0m  [1mSELECT "true_shades".* FROM "true_shades" WHERE "true_shades"."id" = $1 LIMIT 1[0m  [["id", 27]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1  [["user_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "true_shades".* FROM "true_shades" WHERE "true_shades"."id" = $1 LIMIT 1[0m  [["id", 27]]
+  Rendered users/show.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 35ms (Views: 31.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 19:25:51 -0700
+
+
+Started GET "/makeups" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+Processing by MakeupsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mMakeup Load (0.4ms)[0m  [1mSELECT "makeups".* FROM "makeups" WHERE "makeups"."true_shade_id" = 27[0m
+  Rendered makeups/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 18ms (Views: 14.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 19:26:24 -0700
+
+
+Started GET "/makeups" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+Processing by MakeupsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mMakeup Load (0.4ms)[0m  [1mSELECT "makeups".* FROM "makeups" WHERE "makeups"."true_shade_id" = 27[0m
+  Rendered makeups/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 67ms (Views: 13.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:29 -0700
+
+
+Started GET "/makeups/new" for 127.0.0.1 at 2014-09-23 19:34:36 -0700
+Processing by MakeupsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "4"]]
+  Rendered makeups/_form.html.erb (0.8ms)
+  Rendered makeups/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 15ms (Views: 10.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:37 -0700
+
+
+Started GET "/makeups" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+Processing by MakeupsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35mMakeup Load (0.4ms)[0m  SELECT "makeups".* FROM "makeups" WHERE "makeups"."true_shade_id" = 27
+  Rendered makeups/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 18ms (Views: 13.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:40 -0700
+
+
+Started GET "/makeups/new" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+Processing by MakeupsController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  Rendered makeups/_form.html.erb (0.8ms)
+  Rendered makeups/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 16ms (Views: 10.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:41 -0700
+
+
+Started GET "/makeups" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+Processing by MakeupsController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mMakeup Load (0.4ms)[0m  [1mSELECT "makeups".* FROM "makeups" WHERE "makeups"."true_shade_id" = 27[0m
+  Rendered makeups/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 18ms (Views: 13.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 19:34:44 -0700
+
+
+Started GET "/makeups" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+Processing by MakeupsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mMakeup Load (0.4ms)[0m  [1mSELECT "makeups".* FROM "makeups" WHERE "makeups"."true_shade_id" = 27[0m
+  Rendered makeups/index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 48ms (Views: 24.9ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 19:50:28 -0700
+
+
+Started GET "/makeups" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+Processing by MakeupsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mMakeup Load (0.4ms)[0m  [1mSELECT "makeups".* FROM "makeups" WHERE "makeups"."true_shade_id" = 27[0m
+  Rendered makeups/index.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 58ms (Views: 31.4ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:03 -0700
+
+
+Started POST "/user_makeups.5" for 127.0.0.1 at 2014-09-23 19:58:06 -0700
+
+SyntaxError - syntax error, unexpected ')'
+/Users/CarolynNguyen/Documents/GA_projects/Project4-Makeup_File/makeupshadeguide/app/controllers/user_makeups_controller.rb:22: syntax error, unexpected end-of-input, expecting keyword_end:
+  app/controllers/user_makeups_controller.rb:10:in `'
+  activesupport (4.0.4) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.4) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.4) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.4) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.4) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.4) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.4) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.4) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.4) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.4) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:674:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/app_request_handler.rb:13:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/meta_request_handler.rb:13:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.4) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:373:in `_run__1431982161418296444__call__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  rack-contrib (1.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/headers.rb:16:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/05e6d3c070ccbd2f/variables" for 127.0.0.1 at 2014-09-23 19:58:06 -0700
+
+
+Started GET "/makeups" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+Processing by MakeupsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mMakeup Load (0.4ms)[0m  [1mSELECT "makeups".* FROM "makeups" WHERE "makeups"."true_shade_id" = 27[0m
+  Rendered makeups/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 99ms (Views: 24.4ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:37 -0700
+
+
+Started POST "/user_makeups.6" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+Processing by UserMakeupsController#create as 
+  Parameters: {"authenticity_token"=>"doCJl3wftmyfNhERKy3sWiy2E1Y0zk6Gy29mWOUkKSE="}
+  Rendered user_makeups/create.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:38 -0700
+
+
+Started GET "/makeups" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+Processing by MakeupsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mMakeup Load (0.4ms)[0m  [1mSELECT "makeups".* FROM "makeups" WHERE "makeups"."true_shade_id" = 27[0m
+  Rendered makeups/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 50ms (Views: 25.4ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:53 -0700
+
+
+Started POST "/user_makeups.4" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+Processing by UserMakeupsController#create as 
+  Parameters: {"authenticity_token"=>"doCJl3wftmyfNhERKy3sWiy2E1Y0zk6Gy29mWOUkKSE="}
+  Rendered user_makeups/create.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 19:58:55 -0700
+
+
+Started GET "/makeups" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+Processing by MakeupsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mMakeup Load (0.5ms)[0m  [1mSELECT "makeups".* FROM "makeups" WHERE "makeups"."true_shade_id" = 27[0m
+  Rendered makeups/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 24ms (Views: 19.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:40 -0700
+
+
+Started POST "/user_makeups?makeup_id=4" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+Processing by UserMakeupsController#create as HTML
+  Parameters: {"authenticity_token"=>"doCJl3wftmyfNhERKy3sWiy2E1Y0zk6Gy29mWOUkKSE=", "makeup_id"=>"4"}
+  Rendered user_makeups/create.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 19:59:41 -0700
+
+
+Started GET "/makeups" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+Processing by MakeupsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mMakeup Load (0.4ms)[0m  [1mSELECT "makeups".* FROM "makeups" WHERE "makeups"."true_shade_id" = 27[0m
+  Rendered makeups/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 49ms (Views: 25.6ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:14 -0700
+
+
+Started POST "/user_makeups?makeup_id=5" for 127.0.0.1 at 2014-09-23 20:00:18 -0700
+Processing by UserMakeupsController#create as HTML
+  Parameters: {"authenticity_token"=>"doCJl3wftmyfNhERKy3sWiy2E1Y0zk6Gy29mWOUkKSE=", "makeup_id"=>"5"}
+Completed 500  in 3ms
+
+NameError - undefined local variable or method `makeup_id' for #<UserMakeupsController:0x007fe95408be80>:
+  app/controllers/user_makeups_controller.rb:11:in `create'
+  actionpack (4.0.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.4) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.4) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:373:in `_run__766410235570457833__process_action__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.4) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.4) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.4) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:674:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/app_request_handler.rb:13:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/meta_request_handler.rb:13:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.4) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:373:in `_run__1431982161418296444__call__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  rack-contrib (1.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/headers.rb:16:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/CarolynNguyen/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/844c5059365f2433/variables" for 127.0.0.1 at 2014-09-23 20:00:18 -0700
+
+
+Started GET "/makeups" for 127.0.0.1 at 2014-09-23 20:00:35 -0700
+Processing by MakeupsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mMakeup Load (0.4ms)[0m  [1mSELECT "makeups".* FROM "makeups" WHERE "makeups"."true_shade_id" = 27[0m
+  Rendered makeups/index.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 48ms (Views: 24.5ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:36 -0700
+
+
+Started POST "/user_makeups?makeup_id=4" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+Processing by UserMakeupsController#create as HTML
+  Parameters: {"authenticity_token"=>"doCJl3wftmyfNhERKy3sWiy2E1Y0zk6Gy29mWOUkKSE=", "makeup_id"=>"4"}
+  Rendered user_makeups/create.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 20:00:37 -0700
+  [1m[36mUserMakeup Load (1.8ms)[0m  [1mSELECT "user_makeups".* FROM "user_makeups"[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "user_makeups"
+
+
+Started GET "/makeups" for 127.0.0.1 at 2014-09-23 20:01:42 -0700
+Processing by MakeupsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mMakeup Load (0.5ms)[0m  [1mSELECT "makeups".* FROM "makeups" WHERE "makeups"."true_shade_id" = 27[0m
+  Rendered makeups/index.html.erb within layouts/application (65.3ms)
+Completed 200 OK in 101ms (Views: 76.5ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:43 -0700
+
+
+Started POST "/user_makeups?makeup_id=3" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+Processing by UserMakeupsController#create as HTML
+  Parameters: {"authenticity_token"=>"doCJl3wftmyfNhERKy3sWiy2E1Y0zk6Gy29mWOUkKSE=", "makeup_id"=>"3"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "user_makeups" ("created_at", "makeup_id", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Wed, 24 Sep 2014 03:01:51 UTC +00:00], ["makeup_id", 3], ["updated_at", Wed, 24 Sep 2014 03:01:51 UTC +00:00], ["user_id", 4]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  Rendered user_makeups/create.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 40ms (Views: 10.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 20:01:51 -0700
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "user_makeups"[0m
+
+
+Started GET "/makeups" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+Processing by MakeupsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mMakeup Load (0.4ms)[0m  [1mSELECT "makeups".* FROM "makeups" WHERE "makeups"."true_shade_id" = 27[0m
+  Rendered makeups/index.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 60ms (Views: 31.6ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:01 -0700
+
+
+Started POST "/user_makeups?makeup_id=3" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+Processing by UserMakeupsController#create as HTML
+  Parameters: {"authenticity_token"=>"doCJl3wftmyfNhERKy3sWiy2E1Y0zk6Gy29mWOUkKSE=", "makeup_id"=>"3"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "user_makeups" ("created_at", "makeup_id", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Wed, 24 Sep 2014 03:03:02 UTC +00:00], ["makeup_id", 3], ["updated_at", Wed, 24 Sep 2014 03:03:02 UTC +00:00], ["user_id", 4]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 23ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35mMakeup Load (1.0ms)[0m  SELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1  [["user_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1[0m  [["user_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1  [["user_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1[0m  [["user_id", 4]]
+  [1m[35mTrueShade Load (0.3ms)[0m  SELECT "true_shades".* FROM "true_shades" WHERE "true_shades"."id" = $1 LIMIT 1  [["id", 27]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1[0m  [["user_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "true_shades".* FROM "true_shades" WHERE "true_shades"."id" = $1 LIMIT 1  [["id", 27]]
+  Rendered users/show.html.erb within layouts/application (44.2ms)
+Completed 200 OK in 57ms (Views: 50.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 20:03:02 -0700
+  [1m[35mUserMakeup Load (0.6ms)[0m  SELECT "user_makeups".* FROM "user_makeups"
+  [1m[36mUserMakeup Load (0.7ms)[0m  [1mSELECT "user_makeups".* FROM "user_makeups" WHERE "user_makeups"."user_id" = 4[0m
+  [1m[35mUserMakeup Load (0.6ms)[0m  SELECT "user_makeups".* FROM "user_makeups" WHERE "user_makeups"."user_id" = 4
+  [1m[36mUserMakeup Load (0.6ms)[0m  [1mSELECT "user_makeups".* FROM "user_makeups" WHERE "user_makeups"."user_id" = 4[0m
+  [1m[35mUserMakeup Load (0.6ms)[0m  SELECT "user_makeups".* FROM "user_makeups" WHERE "user_makeups"."user_id" = 4
+  [1m[36mMakeup Load (0.7ms)[0m  [1mSELECT "makeups".* FROM "makeups" ORDER BY "makeups"."id" ASC LIMIT 1[0m
+  [1m[35mUserMakeup Load (0.6ms)[0m  SELECT "user_makeups".* FROM "user_makeups" WHERE "user_makeups"."user_id" = 4
+  [1m[36mUser Load (5.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mUserMakeup Load (0.5ms)[0m  [1mSELECT "user_makeups".* FROM "user_makeups" WHERE "user_makeups"."user_id" = $1[0m  [["user_id", 4]]
+  [1m[35mMakeup Load (1.2ms)[0m  SELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1  [["user_id", 4]]
+
+
+Started GET "/users/4" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mMakeup Load (0.5ms)[0m  [1mSELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1[0m  [["user_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1  [["user_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1[0m  [["user_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1  [["user_id", 4]]
+  [1m[36mTrueShade Load (0.3ms)[0m  [1mSELECT "true_shades".* FROM "true_shades" WHERE "true_shades"."id" = $1 LIMIT 1[0m  [["id", 27]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1  [["user_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "true_shades".* FROM "true_shades" WHERE "true_shades"."id" = $1 LIMIT 1[0m  [["id", 27]]
+  [1m[35mMakeup Load (0.8ms)[0m  SELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1  [["user_id", 4]]
+  Rendered users/show.html.erb within layouts/application (72.4ms)
+Completed 200 OK in 105ms (Views: 79.4ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:36 -0700
+
+
+Started GET "/users/4" for 127.0.0.1 at 2014-09-23 20:09:48 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mMakeup Load (0.3ms)[0m  [1mSELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1[0m  [["user_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1  [["user_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1[0m  [["user_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1  [["user_id", 4]]
+  [1m[36mTrueShade Load (0.3ms)[0m  [1mSELECT "true_shades".* FROM "true_shades" WHERE "true_shades"."id" = $1 LIMIT 1[0m  [["id", 27]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1  [["user_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "true_shades".* FROM "true_shades" WHERE "true_shades"."id" = $1 LIMIT 1[0m  [["id", 27]]
+  [1m[35mMakeup Load (0.5ms)[0m  SELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1  [["user_id", 4]]
+  Rendered users/show.html.erb within layouts/application (73.9ms)
+Completed 200 OK in 88ms (Views: 83.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 20:09:48 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 20:09:48 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 20:09:48 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:48 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 20:09:48 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 20:09:48 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 20:09:48 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 20:09:48 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:48 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:48 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:48 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:48 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:49 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:49 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:49 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:49 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:49 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:49 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:49 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:49 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:49 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:49 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:49 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:49 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:49 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:49 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:49 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:49 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:49 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:49 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:49 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:49 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:49 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 20:09:49 -0700
+
+
+Started GET "/users/4" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mMakeup Load (0.3ms)[0m  [1mSELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1[0m  [["user_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1  [["user_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1[0m  [["user_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1  [["user_id", 4]]
+  [1m[36mTrueShade Load (0.2ms)[0m  [1mSELECT "true_shades".* FROM "true_shades" WHERE "true_shades"."id" = $1 LIMIT 1[0m  [["id", 27]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1 ORDER BY "makeups"."id" ASC LIMIT 1  [["user_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "true_shades".* FROM "true_shades" WHERE "true_shades"."id" = $1 LIMIT 1[0m  [["id", 27]]
+  [1m[35mMakeup Load (0.6ms)[0m  SELECT "makeups".* FROM "makeups" INNER JOIN "user_makeups" ON "makeups"."id" = "user_makeups"."makeup_id" WHERE "user_makeups"."user_id" = $1  [["user_id", 4]]
+  Rendered users/show.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 42ms (Views: 38.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/user_makeups.css?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/makeups.css?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/true_shades.css?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/makeups.js?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/true_shades.js?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/user_makeups.js?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-23 20:12:54 -0700

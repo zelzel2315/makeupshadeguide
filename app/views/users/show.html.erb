@@ -12,3 +12,14 @@ Hello <%= current_user.name %>,
 <%= @user.makeups.first.true_shade.name %>
 <br><%= @user.makeups.first.true_shade.description %>
 <br><%= link_to 'Find other makeups in your True Shade', makeups_path %>
+<br>
+<br>
+<h3> This is your collection list </h3>
+<% @user.makeups.each do |m| %>
+  <%= m.brand %> <br>
+  <%= m.product %> <br>
+  <%= m.shade %> <br>
+<% end %>
+
+
+
