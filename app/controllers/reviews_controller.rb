@@ -2,21 +2,17 @@ class ReviewsController < ApplicationController
     respond_to :json
 
   def index
-    @reviews = Review.new
+    @reviews = Review.all
+    # raise @reviews.inspect
     @makeups = Makeup.all
-    respond_with @reviews, each_serializer: ReviewsSerializer
-
+    respond_with @reviews, each_serializer: ReviewSerializer
   end
 
   def new
     @review = Review.new
-    puts "XXXXXXXXXXX"
-    puts params
   end
  
   def create
-    puts "XXXXXXXXXXX"
-    puts params
     @makeup = Makeup.find(params[:makeup_id])
     @review = current_user.reviews.new(review_params)
     @review.makeup_id = @makeup.id
@@ -28,7 +24,6 @@ class ReviewsController < ApplicationController
   end
 
   def show
-    # @review = Review.
   end
 
   def edit

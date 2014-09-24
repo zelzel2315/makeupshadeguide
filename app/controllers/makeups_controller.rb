@@ -35,9 +35,6 @@ class MakeupsController < ApplicationController
   def show
     @makeup = Makeup.find(params[:id])
     @review = Review.new
-
-  
-    # @image = Makeup.find(params[:image])
   end
 
   def edit
@@ -74,10 +71,7 @@ class MakeupsController < ApplicationController
   end
 
   private
-  # def set_makeup
-  #   @makeup = Makeup.find(params[:id])
-  # end
-
+ 
   def makeup_params
     params.require(:makeup).permit(:brand, :product, :shade, :image, :user_id, :makeup_id)
   end
