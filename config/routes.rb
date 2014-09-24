@@ -1,5 +1,6 @@
 MUSGFinal2::Application.routes.draw do
  
+  get "static/index"
   resources :true_shades
   resources :makeups
   resources :users
@@ -9,7 +10,9 @@ MUSGFinal2::Application.routes.draw do
   
   scope '/api' do
     resources :makeups, defaults: { format: :json }
-  end
+    resources :reviews, defaults: { format: :json }
+    resource :static, defaults:   { format: :json }
+  end 
 
   root 'welcome#index'
 
