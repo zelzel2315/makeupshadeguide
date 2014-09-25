@@ -1,3 +1,6 @@
+
+<br><%= link_to 'Add new makeup', makeups_path %>
+
 <br>
 <br>
 <h3> Your true shade is </h3>
@@ -8,17 +11,13 @@
 <br>
 
 <div class="makeupimages">
-<h3> This is your collection list </h3>
-<% @user.makeups.each do |m| %>
+  <h3> This is your collection list </h3>
+  <% @user.makeups.each do |m| %>
   <%= m.brand %> <br>
   <%= m.product %> <br>
   <%= m.shade %> <br>
   <%= image_tag(m.image) %>
-
-<% end %>
-<br>
-<br>
+  <% end %>
+  <br>
+  <br>
 </div>
-
-
-

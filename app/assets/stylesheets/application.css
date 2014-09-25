@@ -190,7 +190,7 @@ h1.landtitle {
 
 #signinform {
   width: 300px;
-  height: auto;
+  height: 150px;
   text-align: center;
 }
 
@@ -213,4 +213,18 @@ h1.landtitle {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+.makeupimages {
+  width: 105px;
+  height: 180px;
+  margin: auto;
+}
+
+li.custom-button-class {
+  float: left;
+  display: inline-block;
+
+}
+
+
 

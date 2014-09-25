@@ -2,14 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+//$include-html-button-classes: $include-html-classes;
 
 
-.makeupimages {
-  width: 105px;
-  height: 180px;
-}
  
 svg {
   width: 400px;
   height: 400px;
 }
+
+.custom-button-class {
+$button-med: rem-calc(12);
+$button-tny: rem-calc(7);
+$button-sml: rem-calc(9);
+$button-lrg: rem-calc(16);
+$button-display: inline-block;
+$button-margin-bottom: rem-calc(20);
+
+} 
