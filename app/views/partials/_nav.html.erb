@@ -1,8 +1,39 @@
+<<<<<<< HEAD
+<nav class="top-bar" data-topbar data-options="is_hover: false">
+  <ul class="title-area">
+    <li class="name">
+      <h1><%= link_to 'Welcome to Makeup Shade Guide', root_path %></h1>
+    </li>
+    <li class="toggle-topbar">Menu</li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="divider"></li>
+      <li class="has-dropdown">
+        <% if current_user %>
+        <a href="#"><%= current_user.name %></a>
+          <ul class="dropdown">
+            
+            <li><%= link_to 'Edit profile', edit_user_path(current_user) %></li>
+            <li><%= link_to "Back to your list", user_path(current_user.id) %></li>
+            <li class="divider"></li>
+            <li class="divider"></li>
+            <li><%= link_to "Logout", session_path, method: :delete %></li>
+          </ul>
+          
+        <% else %>
+          <li><%= link_to 'Sign up!', new_user_path %></li>
+          <li><%= link_to 'Log in', new_session_path %></li>
+        <% end %>
+=======
 <div class="navbar">
   <nav class="top-bar" data-topbar data-options="is_hover: true">
     <ul class="title-area">
       <li class="name">
         <h1><%= link_to 'Makeup Shade Guide', root_path %></h1>
+>>>>>>> master
       </li>
       <li class="toggle-topbar">Menu</li>
     </ul>
