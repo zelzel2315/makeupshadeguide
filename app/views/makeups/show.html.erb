@@ -58,9 +58,11 @@
   <br><%= link_to "Back to makeup list", makeups_path, :class => 'small button radius' %>
   <br>
   <br>
+  <%= link_to 'Add to collection', user_makeups_path(user_id: current_user.id, makeup_id: @makeup.id), method: :post %>
 </div>
    
-  
+  <%= render 'partials/data' %>
+
   <footer class="row">
 
 
@@ -73,4 +75,4 @@
       </div>
     </div>
   </footer>
-<%= render 'partials/data' %>
+

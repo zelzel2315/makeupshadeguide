@@ -17,7 +17,7 @@ class MakeupsController < ApplicationController
   end
 
   def create
-    @makeup = Makeup.new(makeup_params, true_shade_id: current_user.true_shade_id)
+    @makeup = Makeup.new(makeup_params, user_id: current_user.id, makeup_id: params[:makeup_id], true_shade_id: current_user.true_shade_id)
     # @makeup = current_user.makeups.create(user_id: @user.id, makeup_id: @makeup.id)
 
     respond_to do |format|
