@@ -40,14 +40,14 @@
   width: 100%;
 }
 .productimage {
-  height: 200px;
-  width: 350px;
+  max-height: 200px;
+  max-width: 220px;
   background-size: contain;
   background-repeat: no-repeat;
 }
-img {
+/*.imagebox {
   height: 191px;
-}
+}*/
 
 .productbox {
   background-color: #e2ceb3;
@@ -55,6 +55,8 @@ img {
   width: 50%;
   padding: 60px;
 }
+
+
 
 .listtitle {
   text-align: center;
