@@ -16,14 +16,6 @@ ActiveRecord::Schema.define(version: 20140925043320) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "collections", force: true do |t|
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "collections", ["user_id"], name: "index_collections_on_user_id", using: :btree
-
   create_table "makeups", force: true do |t|
     t.string   "brand"
     t.string   "product"
@@ -61,7 +53,6 @@ ActiveRecord::Schema.define(version: 20140925043320) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "owns"
   end
 
   add_index "user_makeups", ["makeup_id"], name: "index_user_makeups_on_makeup_id", using: :btree
