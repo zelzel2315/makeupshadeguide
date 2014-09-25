@@ -13,7 +13,7 @@
     <%= csrf_meta_tags %>
     <style>
     /*.orbit-slides-container{
-  height: 1000px;
+  height: 1000px; 
   width: 1000px;
 }*/
     </style>
@@ -22,9 +22,10 @@
   <body>
     <%= render 'partials/nav' %>
 
-
+    <div class="container">
     <%= yield %>
     <%= javascript_include_tag "application" %>
+    <div/>
 
   </body>
 </html>

@@ -17,11 +17,12 @@ class MakeupsController < ApplicationController
   end
 
   def create
-    @makeup = Makeup.new(makeup_params)
+    @makeup = Makeup.new(makeup_params, user_id: current_user.id, makeup_id: params[:makeup_id], true_shade_id: current_user.true_shade_id)
     # @makeup = current_user.makeups.create(user_id: @user.id, makeup_id: @makeup.id)
 
     respond_to do |format|
       if @makeup.save
+        @makeup.update(true_shade: current_user.true_shade)
         session[:makeup_id] = @makeup.id.to_s
         format.html { redirect_to @makeup, notice: 'Makeup was successfully created.' }
         format.json { render :show, status: :created, location: @makeup }
@@ -80,7 +81,7 @@ class MakeupsController < ApplicationController
   private
  
   def makeup_params
-    params.require(:makeup).permit(:brand, :product, :shade, :image, :user_id, :makeup_id)
+    params.require(:makeup).permit(:brand, :product, :shade, :image, :true_shade_id, :user_id, :makeup_id)
   end
   
 end
