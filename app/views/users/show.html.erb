@@ -1,29 +1,49 @@
 
 
 
-<br><%= link_to 'Add new makeup', makeups_path %>
-<br>
-<br>
-<h3> Your true shade is </h3>
-<%= @user.makeups.first.true_shade.name %>
-<br><%= @user.makeups.first.true_shade.description %>
-<br><%= link_to 'Find other makeups in your True Shade', makeups_path %>
-<br>
-<br>
+<div class="trueshade">
+  <h3 class="trueshadetitle"> Your true shade is . . .</h3>
+<div class="resultcontainer">
+  <h1 class="shaderesult"><%= @user.makeups.first.true_shade.name %></h1>
+
+  <div class="shadedescription"><br>
+   <%= @user.makeups.first.true_shade.description %>
+  </div>
+</div>
+
+  <h4><%= link_to 'Find other makeups in your True Shade', makeups_path %></h4>
+</div>
+
+
+
+
+
 
 <div class="makeupimages">
-<h3> This is your collection list </h3>
-<% @user.makeups.each do |m| %>
-  <%= m.brand %> <br>
-  <%= m.product %> <br>
-  <%= m.shade %> <br>
-
-  <%= image_tag(m.image) %>
-  <img src="/assets/makeup/<%= m.image %>" > <br>
-
-<% end %>
-<br>
-<br>
+  <h3 class="listtitle"> Your Collection List </h3>
+  <div class="bottomdiv">
+<br><%= link_to 'Add new makeup', makeups_path, :class => 'small button radius' %>
+</div>
+    
+  <% @user.makeups.each do |m| %>
+    <div class="row">
+      <div class="large-6 columns productbox">
+        <h3><%= m.brand %></h3> <br>
+        <%= m.product %> <br>
+        <%= m.shade %> <br>
+      </div>
+      <div class="large-6 columns productbox">
+        <div class="productimage">
+          <%= image_tag(m.image) %>
+        </div>
+      </div>
+    </div>
+</div>
+    
+  <% end %>
+ 
 </div>
 <%#= link_to 'Log Out', session_path, method: :delete %>
+
+
 

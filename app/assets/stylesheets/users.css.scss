@@ -1,3 +1,65 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script);
+
+.trueshade {
+  background-color: #e2ceb3;
+  height: 400px;
+  width: 100%;
+  margin-top: 60px;
+  color: white;
+  font-size: 30px;
+}
+.trueshadetitle {
+  font-family: 'Dancing Script', cursive;
+  
+  color: white;
+  font-size: 65px;
+}
+.shaderesult {
+  color: #463939;
+  font-size: 80px;
+  text-align: center;
+  font-family: 'Rock Salt', cursive !important;
+
+}
+.shadedescription {
+  height: auto;
+  width: auto;
+  background-color: #e2ceb3
+}
+.resultcontainer {
+  background-color: #fbe6d9;
+  height: auto;
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.makeupimages {
+  width: 100%;
+}
+.productimage {
+  height: 200px;
+  width: 350px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+img {
+  height: 191px;
+}
+
+.productbox {
+  background-color: #e2ceb3;
+  height: 300px;
+  width: 50%;
+  padding: 60px;
+}
+
+.listtitle {
+  text-align: center;
+}
+
+
+
+
