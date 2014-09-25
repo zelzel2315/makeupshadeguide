@@ -236,19 +236,6 @@ makeups = Makeup.create([
   ])
 
 
-# images 
-
-# makeup = Makeup.find(1)
-# file = File.open("db/seeds/images/katvond.jpg", "rb").read
-# makeup.makeup_image = file
-# makeup.save!
-
-
-
-# my_id = true_shade.find([:name])
-# true_shade_id:"[true_shade.id]"
-
-
 
 
 reviews = Review.create([
