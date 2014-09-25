@@ -204,46 +204,57 @@ makeups = Makeup.create([
     product: "Queen Collection 3 in 1 Foundation", 
     shade: "Q840 Almond Glow", 
     true_shade_id: ts[25].id, 
-    image:"",
-    description: ""},
-    
+    image:"CoverGirlCollectionAlmondGlow.jpg",
+    description: "We fused the blendability of a liquid, the targeted coverage of a concealer, and the smooth finish of a powder into one lightweight step. The innovative 3-in-1 formula provides a flawless look that lasts all day long so you can feel confident that your makeup will stay put from 9 to 5."},
+
   {brand: "Revlon", 
     product: "ColorStay Makeup For Combo/Oily Skin", 
     shade: "440 Mahogany", 
     true_shade_id: ts[25].id, 
-    image:"",
-    description: ""},
+    image:"RevlonColorstayMahogany.jpg",
+    description: "Contains patented ColorStay TM longwear technology for up to 16-hour wear. Provides medium to full coverage with a semi-matte finish. Oil-free Fragrance-free.Transfer-resistant."},
+
   {brand: "MAC", 
     product: "Studio Sculpt Foundation", 
     shade: "NW20", 
     true_shade_id: ts[6].id, 
-    image:"",
-    description: ""},
+    image:"MacStudio20.jpg",
+    description: "A luxurious, creamy foundation that delivers ultimate hydration while instantly revitalizing the look of dull and dry skin. Innovative gel-based system provides outstanding skin feel and a medium, buildable coverage with a natural satin finish. Micronized silicone coated pigments improve skin adherence and blendability while helping to maintain colour purity. Offers broad-spectrum UVA/UVB protection with SPF 15. Comfortable on all skins, but especially suited for normal-dry and mature skins."},
+
   {brand: "Rimmel", 
     product: "Wake Me Up Foundation", 
     shade: "True Ivory", 
     true_shade_id: ts[6].id, 
-    image:"",
-    description: ""},
-  # {name: "Bobbi Brown BB Cream SPF 35 Medium", brand: "Bobbi", product: "Brown BB Cream SPF 35", shade: "Medium", true_shade_id: ts[19].id, image:""},
+    image:"RimmelWakeMeTrueIvory.jpg",
+    description: "Wake Up & Glow! Rimmel’s first liquid foundation that instantly reawakens skin with a healthy, radiant glow Light, moisturising texture applies smoothly and leaves skin feeling soft and comfortable all day Gives an instant flawless, natural-looking finish Visible anti-fatigue effect with peptides and a Vitamin Moisturising complex"},
+
+  # {brand: "Bobbi", 
+  # product: "Brown BB Cream SPF 35", 
+  # shade: "Medium", 
+  # true_shade_id: ts[19].id, 
+  # image:""},
+
   {brand: "Make Up For Ever", 
     product: "HD Invisible Cover Foundation", 
     shade: "140", 
     true_shade_id: ts[14].id, 
-    image:"",
-    description: ""},
+    image:"MakeupForever140.jpg",
+    description: "An oil-free medium-to-full-coverage liquid foundation that covers skin imperfections flawlessly while remaining invisible on-screen and in real life. This foundation creates a soft-focus effect, which is designed to meet the coverage concerns of those in the spotlight. It leaves your complexion with such a flawless finish, it can withstand bright or harsh lighting."},
+
   {brand: "Make Up For Ever", 
     product: "Mat Velvet + Matifying Foundation", 
     shade: "40", 
     true_shade_id: ts[14].id, 
-    image:"",
-    description: ""},
+    image:"MakeupForeverMat40.jpg",
+    description: "A shine controlling, oil-free, water-resistant, complete coverage liquid foundation. Hides imperfections, evens out skintone, and mattifies with a non-oily, perfectly powdered finish. The result is flawless and lasts for hours.Although this foundation provides full coverage, the end result is completely adjustable to fit your needs—a little goes a long way.
+     "},
+
   {brand: "Urban Decay", 
     product: "Naked Skin Foundation", 
     shade: "4.0", 
     true_shade_id: ts[14].id, 
-    image:"",
-    description: ""}
+    image:"UrbanDecayNaked4.jpg",
+    description: "Ideal for a variety of coverage levels. Naked Skin offers truly buildable coverage you can see but never feel. Coverage without compromise. Our weightless formula blurs imperfections for a flawless finish that feels invisible, but looks professionally retouched."}
   ])
 
 
