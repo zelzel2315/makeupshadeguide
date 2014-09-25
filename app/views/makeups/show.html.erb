@@ -18,6 +18,14 @@
       <div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
       </div>
   </div>
+
+  <br>
+  <br><%= link_to "Review makeup", new_review_path(makeup_id: @makeup.id), :class => 'small button radius' %>
+  <br>
+  <br><%= link_to "Back to makeup list", makeups_path, :class => 'small button radius' %>
+  <br>
+  <br>
+
 </div>
 <div class="large-6 columns">
     <div class="row">
@@ -31,6 +39,7 @@
               <% end %>
           </div>
       </div>
+
 
       <div class="d3rendered">
        <%= render 'partials/data' %>
@@ -54,3 +63,4 @@
 </div>
 </div>
 </footer>
+

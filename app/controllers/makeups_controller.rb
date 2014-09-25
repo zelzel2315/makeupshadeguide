@@ -17,7 +17,7 @@ class MakeupsController < ApplicationController
   end
 
   def create
-    @makeup = Makeup.new(makeup_params)
+    @makeup = Makeup.new(makeup_params, true_shade_id: current_user.true_shade_id)
     # @makeup = current_user.makeups.create(user_id: @user.id, makeup_id: @makeup.id)
 
     respond_to do |format|
@@ -80,7 +80,7 @@ class MakeupsController < ApplicationController
   private
  
   def makeup_params
-    params.require(:makeup).permit(:brand, :product, :shade, :image, :user_id, :makeup_id)
+    params.require(:makeup).permit(:brand, :product, :shade, :image, :true_shade_id, :user_id, :makeup_id)
   end
   
 end

@@ -265,6 +265,11 @@ reviews = Review.create([
   {makeup_id: "Tarte Powderful Amazonian Clay Pressed Mineral Powder Medium 08", rating: "4", comment: "It's a lightweight powder that goes on lightly as well. Good for basic everyday use, but not for heavy duty coverup. Matches pretty well.", user_id: "Jean"},
   {makeup_id: "MAC Studio Sculpt Foundation NC35", rating: "4", comment: "I feel it matches really well. They matched me while I was there and have used the same one for 3 years now.", user_id: "Dani"},
   {makeup_id: "Maybelline Fit Me Shine-Free Foundation Sun Beige 310", rating: "5", comment: "It blends in really good, almost exact color as my skin.", user_id: "Barbara"},
+<<<<<<< HEAD
+#   # {foundation_id: "Tarte Powderful Amazonian Clay Pressed Mineral Powder Medium 08", rating: "4", comment: "It's a lightweight powder that goes on lightly as well. Good for basic everyday use, but not for heavy duty coverup. Matches pretty well."},
+#   # {foundation_id: "Tarte Powderful Amazonian Clay Pressed Mineral Powder Medium 08", rating: "4", comment: "It's a lightweight powder that goes on lightly as well. Good for basic everyday use, but not for heavy duty coverup. Matches pretty well."},
+#   # {foundation_id: "Tarte Powderful Amazonian Clay Pressed Mineral Powder Medium 08", rating: "4", comment: "It's a lightweight powder that goes on lightly as well. Good for basic everyday use, but not for heavy duty coverup. Matches pretty well."}
+=======
   ])
 
 
@@ -277,6 +282,7 @@ reviews = Review.create([
 # #   # {foundation_id: "Tarte Powderful Amazonian Clay Pressed Mineral Powder Medium 08", rating: "4", comment: "It's a lightweight powder that goes on lightly as well. Good for basic everyday use, but not for heavy duty coverup. Matches pretty well."},
 # #   # {foundation_id: "Tarte Powderful Amazonian Clay Pressed Mineral Powder Medium 08", rating: "4", comment: "It's a lightweight powder that goes on lightly as well. Good for basic everyday use, but not for heavy duty coverup. Matches pretty well."}
 
+>>>>>>> master
 
 # ])
 
