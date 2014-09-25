@@ -261,16 +261,117 @@ makeups = Makeup.create([
 
 
 
-reviews = Review.create([
-  {makeup_id: "Tarte Powderful Amazonian Clay Pressed Mineral Powder Medium 08", rating: "4", comment: "It's a lightweight powder that goes on lightly as well. Good for basic everyday use, but not for heavy duty coverup. Matches pretty well.", user_id: "Jean"},
-  {makeup_id: "MAC Studio Sculpt Foundation NC35", rating: "4", comment: "I feel it matches really well. They matched me while I was there and have used the same one for 3 years now.", user_id: "Dani"},
-  {makeup_id: "Maybelline Fit Me Shine-Free Foundation Sun Beige 310", rating: "5", comment: "It blends in really good, almost exact color as my skin.", user_id: "Barbara"},
-<<<<<<< HEAD
-#   # {foundation_id: "Tarte Powderful Amazonian Clay Pressed Mineral Powder Medium 08", rating: "4", comment: "It's a lightweight powder that goes on lightly as well. Good for basic everyday use, but not for heavy duty coverup. Matches pretty well."},
-#   # {foundation_id: "Tarte Powderful Amazonian Clay Pressed Mineral Powder Medium 08", rating: "4", comment: "It's a lightweight powder that goes on lightly as well. Good for basic everyday use, but not for heavy duty coverup. Matches pretty well."},
-#   # {foundation_id: "Tarte Powderful Amazonian Clay Pressed Mineral Powder Medium 08", rating: "4", comment: "It's a lightweight powder that goes on lightly as well. Good for basic everyday use, but not for heavy duty coverup. Matches pretty well."}
-=======
-  ])
+# reviews = Review.create([
+#   {makeup_id: "Tarte Powderful Amazonian Clay Pressed Mineral Powder Medium 08", 
+#     rating: "4", 
+#     comment: "It's a lightweight powder that goes on lightly as well. Good for basic everyday use, but not for heavy duty coverup. Matches pretty well.", 
+#     user_id: "Jean"},
+
+#   {makeup_id: "MAC Studio Sculpt Foundation NC35", 
+#     rating: "4", 
+#     comment: "I feel it matches really well. They matched me while I was there and have used the same one for 3 years now.", 
+#     user_id: "Dani"},
+
+#   {makeup_id: "Urban Decay Naked Skin Foundation 4.0", 
+#     rating: "5", 
+#     comment: "Great match.", 
+#     user_id: "Kim"},
+
+#   {makeup_id: "Urban Decay Naked Skin Foundation 4.0", 
+#     rating: "4", 
+#     comment: "Almost perfect color match.", 
+#     user_id: "Casey"},
+
+#   {makeup_id: "Urban Decay Naked Skin Foundation 4.0", 
+#     rating: "4", 
+#     comment: "Dark on me now but matches perfect during winter.", 
+#     user_id: "Sheila"},
+
+#   {makeup_id: "Urban Decay Naked Skin Foundation 4.0", 
+#     rating: "3", 
+#     comment: "Too yellow.", 
+#     user_id: "Jane"},
+
+#   {makeup_id: "Urban Decay Naked Skin Foundation 4.0", 
+#     rating: "5", 
+#     comment: "Perfect match.", 
+#     user_id: "Jess"},
+
+#   {makeup_id: "Urban Decay Naked Skin Foundation 4.0", 
+#     rating: "5", 
+#     comment: "100% match.", 
+#     user_id: "Carla"},
+
+#   {makeup_id: "Urban Decay Naked Skin Foundation 4.0", 
+#     rating: "5", 
+#     comment: "Matches perfectly.", 
+#     user_id: "Charlene"},
+
+#   {makeup_id: "Urban Decay Naked Skin Foundation 4.0", 
+#     rating: "4", 
+#     comment: "Matches my body but not my neck, still a great match.", 
+#     user_id: "Abby"},
+
+#   {makeup_id: "Make Up For Ever Mat Velvet + Matifying Foundation 40", 
+#     rating: "5", 
+#     comment: "Awesome match for my skin.", 
+#     user_id: "Barbara"},
+
+#   {makeup_id: "Make Up For Ever Mat Velvet + Matifying Foundation 40", 
+#     rating: "5", 
+#     comment: "It blends in really good, almost exact color as my skin.", 
+#     user_id: "Lindy"},
+
+#   {makeup_id: "Make Up For Ever Mat Velvet + Matifying Foundation 40", 
+#     rating: "4", 
+#     comment: "Pretty good match but UD shade 4.0 matches me the best.", 
+#     user_id: "Kim"},
+
+#   {makeup_id: "Make Up For Ever Mat Velvet + Matifying Foundation 40", 
+#     rating: "3", 
+#     comment: "Skin is more neutral than yellow so this did not match me.", 
+#     user_id: "Sam"},
+    
+#   {makeup_id: "Make Up For Ever Mat Velvet + Matifying Foundation 40", 
+#     rating: "5", 
+#     comment: "Favorite foundation, matches me to the tee.", 
+#     user_id: "Sally"},
+
+#   {makeup_id: "Make Up For Ever Mat Velvet + Matifying Foundation 40", 
+#     rating: "5", 
+#     comment: "The best match for me.", 
+#     user_id: "Georgia"},
+
+#   {makeup_id: "Make Up For Ever Mat Velvet + Matifying Foundation 40", 
+#     rating: "4", 
+#     comment: "It blends in really good, almost exact color as my skin.", 
+#     user_id: "Michelle"},
+
+#   {makeup_id: "Make Up For Ever Mat Velvet + Matifying Foundation 40", 
+#     rating: "1", 
+#     comment: "Horrible match for me, too dark and too yellow.", 
+#     user_id: "Sherylle"}
+
+#   # {makeup_id: "Maybelline Fit Me Shine-Free Foundation Sun Beige 310", 
+#   #   rating: "5", 
+#   #   comment: "It blends in really good, almost exact color as my skin.", 
+#   #   user_id: "Barbara"},
+
+#   # {makeup_id: "Maybelline Fit Me Shine-Free Foundation Sun Beige 310", 
+#   #   rating: "5", 
+#   #   comment: "It blends in really good, almost exact color as my skin.", 
+#   #   user_id: "Barbara"},
+
+#   # {makeup_id: "Maybelline Fit Me Shine-Free Foundation Sun Beige 310", rating: "5", comment: "It blends in really good, almost exact color as my skin.", user_id: "Barbara"},
+#   # {makeup_id: "Maybelline Fit Me Shine-Free Foundation Sun Beige 310", rating: "5", comment: "It blends in really good, almost exact color as my skin.", user_id: "Barbara"},
+#   # {makeup_id: "Maybelline Fit Me Shine-Free Foundation Sun Beige 310", rating: "5", comment: "It blends in really good, almost exact color as my skin.", user_id: "Barbara"},
+#   # {makeup_id: "Maybelline Fit Me Shine-Free Foundation Sun Beige 310", rating: "5", comment: "It blends in really good, almost exact color as my skin.", user_id: "Barbara"},
+#   # {makeup_id: "Maybelline Fit Me Shine-Free Foundation Sun Beige 310", rating: "5", comment: "It blends in really good, almost exact color as my skin.", user_id: "Barbara"},
+#   # {makeup_id: "Maybelline Fit Me Shine-Free Foundation Sun Beige 310", rating: "5", comment: "It blends in really good, almost exact color as my skin.", user_id: "Barbara"},
+#   # {makeup_id: "Maybelline Fit Me Shine-Free Foundation Sun Beige 310", rating: "5", comment: "It blends in really good, almost exact color as my skin.", user_id: "Barbara"},
+
+
+#   ])
 
 
 
@@ -282,7 +383,7 @@ reviews = Review.create([
 # #   # {foundation_id: "Tarte Powderful Amazonian Clay Pressed Mineral Powder Medium 08", rating: "4", comment: "It's a lightweight powder that goes on lightly as well. Good for basic everyday use, but not for heavy duty coverup. Matches pretty well."},
 # #   # {foundation_id: "Tarte Powderful Amazonian Clay Pressed Mineral Powder Medium 08", rating: "4", comment: "It's a lightweight powder that goes on lightly as well. Good for basic everyday use, but not for heavy duty coverup. Matches pretty well."}
 
->>>>>>> master
+
 
 # ])
 
