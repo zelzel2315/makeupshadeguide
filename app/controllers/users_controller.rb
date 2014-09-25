@@ -15,7 +15,7 @@ class UsersController < ApplicationController
     #   makeup_item = m.brand + " " + m.product + " " + m.shade
     #   makeup_list.push(makeup_item)
     # end 
-  end
+  end 
 
   def create
     @user = User.new(user_params) 
@@ -28,8 +28,6 @@ class UsersController < ApplicationController
         @my_makeup = @user.makeups.first
         # @my_makeup = Makeup.where(makeup_id: @user.makeup_id).first
         @user.update(true_shade: @my_makeup.true_shade)
-        # @user = @my_makeup.true_shade
-        # @user.save
         session[:user_id] = @user.id.to_s
         redirect_to user_path(@user)
       else

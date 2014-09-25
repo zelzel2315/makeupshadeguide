@@ -22,6 +22,7 @@ class MakeupsController < ApplicationController
 
     respond_to do |format|
       if @makeup.save
+        @makeup.update(true_shade: current_user.true_shade)
         session[:makeup_id] = @makeup.id.to_s
         format.html { redirect_to @makeup, notice: 'Makeup was successfully created.' }
         format.json { render :show, status: :created, location: @makeup }
