@@ -15,6 +15,45 @@
  */
 
 @import url(http://fonts.googleapis.com/css?family=Rock+Salt);
+/*start of navigation bar styling*/
+.navbar {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: -50px;
+    opacity: 0.8;
+    z-index: 999;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.navbar:hover {
+    top: 0;
+}
+/*end of navigation styling*/
+
+/*start of welcome page styling*/
+.welcomePageBackground {
+  padding: 0;
+  margin-top: -102px;
+  height: 1320px;
+  width: 100%;
+  background-image: url("brushed.png");
+}
+
+.orbitContainer img {
+  width: 100%;
+  background-size: cover;
+}
+
+
+
+#headcontain {
+  margin-top: 115px;
+  width: 100%;
+}
 
 
 .welcomephoto {
@@ -34,28 +73,102 @@ ul {
   padding: 0;
   margin: 0;
 }
-/*.homepagepicture {
-  height: 400px;
+
+.orbit-slides-container{
+  height: 1000px;
+  width: 1000px;
+}
+
+.row.aboutUs {
+  margin-top: 70px;
+}
+.aboutUs {
+  
   width: 600px;
-  background-image: url(f1.jpg);
+  height:400px;
+  margin: 0 auto;
+}
+
+.whoarewe {
+  font-size: 35px;
+  font-family: 'Rock Salt', cursive !important;
+  color: #c18058;
+}
+p.aboutUsContent {
+  font-size: 22px;
+}
+
+.photo1 {
+  height:200px;
+  width:200px;
+  background-image: url("photo1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1px;
+}
+.photo2 {
+  height:200px;
+  width:200px;
+  background-image: url("photo2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.photo3 {
+  height:200px;
+  width:200px;
+  background-image: url("photo3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.photo4 {
+  height:200px;
+  width:200px;
+  background-image: url("photo4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.row.contactUs {
+  margin-top: 85px;
+}
+
+.section {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.bottomsection {
+  background-image: url("brushed.png");
+  height: 375px;
+  width: 100%;
+  padding: 50px;
+}
+
+.crisphoto {
+  height: 200px;
+  width: 350px;
+  background-image: url("jessicabiel.jpg");
   background-size: contain;
   background-repeat: no-repeat;
-  margin: 0 auto;
-}*/
+}
 
-.aboutUs {
-  width: 75%;
+.anabelphoto {
   height: 200px;
-  text-align: justify;
-  color: white;
-  margin: 0 auto;
-  margin-top: 400px;
-  background-color: rgba(0,0,0,0.4);
+  width: 350px;
+  background-image: url("EvaLongoria3.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.aboutUsContent {
-  font-size: 26px;
+.carolynphoto {
+  height: 200px;
+  width: 350px;
+  background-image: url("kristinkreuk.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
+/*End of Welcome Page Styling*/
 
 
 #signinTitle {
@@ -100,22 +213,4 @@ h1.landtitle {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
