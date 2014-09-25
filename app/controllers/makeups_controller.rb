@@ -35,6 +35,13 @@ class MakeupsController < ApplicationController
   def show
     @makeup = Makeup.find(params[:id])
     @review = Review.new
+    @reviews = @makeup.reviews
+    gon.watch.reviewOne = Review.where(makeup_id: @makeup.id, rating: 1).count
+    gon.watch.reviewTwo = Review.where(makeup_id: @makeup.id, rating: 2).count
+    gon.watch.reviewThree = Review.where(makeup_id: @makeup.id, rating: 3).count
+    gon.watch.reviewFour = Review.where(makeup_id: @makeup.id, rating: 4).count
+    gon.watch.reviewFive = Review.where(makeup_id: @makeup.id, rating: 5).count
+
   end
 
   def edit
