@@ -6,14 +6,20 @@
 <br><%= link_to 'Find other makeups in your True Shade', makeups_path %>
 <br>
 <br>
+
+<div class="makeupimages">
 <h3> This is your collection list </h3>
 <% @user.makeups.each do |m| %>
   <%= m.brand %> <br>
   <%= m.product %> <br>
   <%= m.shade %> <br>
+
+  <%= image_tag(m.image) %>
+  <img src="/assets/makeup/<%= m.image %>" > <br>
+
 <% end %>
 <br>
 <br>
-
+</div>
 <%#= link_to 'Log Out', session_path, method: :delete %>
 

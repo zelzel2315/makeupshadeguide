@@ -1,1 +1,38 @@
-static.html.erb
+<h1>static</h1>
+<p>Find me in app/views/makeups/index.html.erb</p>
+
+
+<%= link_to 'Add a makeup to your true shade', new_makeup_path %>
+<br>
+
+<br><%= link_to "Back to your list", user_path(current_user.id) %>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Brand</th>
+      <th>Product</th>
+      <th>Shade</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @makeups.each do |makeup| %>
+      <tr>
+        <td><%= makeup.brand %></td>
+        <td><%= makeup.product %></td>
+        <td><%= makeup.shade %></td>
+        <td><%= link_to 'Show', makeup %></td>
+        <td><%= link_to 'Edit', edit_makeup_path(makeup) %></td>
+        <td><%= link_to 'Add to collection', user_makeups_path(makeup_id: makeup.id), method: :post %></td>
+        <!-- <td><%#= link_to 'Destroy', makeup, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Log Out', session_path, method: :delete %>

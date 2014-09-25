@@ -18,6 +18,7 @@
 logs
 file.log
 /tmp
+tmp/cache/assets/development/sprockets/*
 /vendor
 .env
 .env

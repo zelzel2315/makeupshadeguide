@@ -9,9 +9,7 @@
         <h2><%= @makeup.brand %>
         <br><%= @makeup.product %>
         <br><%= @makeup.shade %></h2>
-        <div class="makeupimages">
-        <%= image_tag("/assets/makeup/#{@makeup.image}") %>
-        </div>
+       
       </div>
     </div>
   </div>
@@ -19,7 +17,9 @@
   <div class="row">
     <div class="large-5 columns ">
       <div class="panel">
-        <a href="#"><img src="http://placehold.it/300x240&text=[img]"/></a>
+         <div class="makeupimages">
+        <%= image_tag("/assets/makeup/#{@makeup.image}") %>
+        </div>
         <h5><a href="#">
           <%= @makeup.brand %>
           <br>
@@ -52,7 +52,6 @@
       <p><img src="http://placehold.it/300x440&text=[ad]"/></p>
     </aside> -->
 
-  <br><%= link_to 'Add a makeup', new_makeup_path, :class => 'small button radius' %>
   <br>
   <br><%= link_to "Review makeup", new_review_path(makeup_id: @makeup.id), :class => 'small button radius' %>
   <br>
