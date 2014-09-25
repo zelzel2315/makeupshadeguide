@@ -1,6 +1,3 @@
-
-
-
 <br><%= link_to 'Add new makeup', makeups_path %>
 <br>
 <br>
@@ -12,18 +9,13 @@
 <br>
 
 <div class="makeupimages">
-<h3> This is your collection list </h3>
-<% @user.makeups.each do |m| %>
+  <h3> This is your collection list </h3>
+  <% @user.makeups.each do |m| %>
   <%= m.brand %> <br>
   <%= m.product %> <br>
   <%= m.shade %> <br>
-
   <%= image_tag(m.image) %>
-  <img src="/assets/makeup/<%= m.image %>" > <br>
-
-<% end %>
-<br>
-<br>
+  <% end %>
+  <br>
+  <br>
 </div>
-<%#= link_to 'Log Out', session_path, method: :delete %>
-

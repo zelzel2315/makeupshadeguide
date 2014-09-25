@@ -214,3 +214,17 @@ h1.landtitle {
   background-repeat: no-repeat;
 }
 
+.makeupimages {
+  width: 105px;
+  height: 180px;
+  margin: auto;
+}
+
+li.custom-button-class {
+  float: left;
+  display: inline-block;
+
+}
+
+
+
