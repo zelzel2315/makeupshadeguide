@@ -1,0 +1,99 @@
+<%= include_gon %>
+<!-- <p>Data View</p>
+ -->
+<div class="container">
+  <svg id="Aratings">
+  </svg>
+</div>
+
+<script>
+
+  var data = [gon.reviewFive, gon.reviewFour, gon.reviewThree, gon.reviewTwo, gon.reviewOne];
+  
+
+
+  var margin = {top: 0, right: 10, bottom: 0, left: 10};
+
+// pixels
+  var width = 400;
+  var height = 400;
+  var barWidth = width / data.length - (data.length / 2);
+
+
+ var randomed = function getRandomColor() {
+    var letters = '0123456789ABCDEF'.split('');
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+  
+// function inverse(hex) {
+//   var inverse = null;
+//   if (hex.length == 7 && hex.indexOf('#') == 0) {
+//     inverse = '#';
+//     for (var i = 1; i < 7; i += 2) {
+//       var value = (255 - parseInt(hex.substring(i, i + 2), 16)).toString(16);
+//       inverse += value;
+//     }
+//   }
+
+//   return inverse
+// }
+
+
+// gives you data points (rating 1-5), range of bar from one to five
+var x = d3.scale.linear().domain([1, 5]).range([10, width]);
+var y = d3.scale.linear().domain([0, data.length]).range([0, height]);
+var yScale = d3.scale.linear().domain([1,5]).range([height, 8]);
+// add the canvas to the DOM
+var barDemo = d3.select("#Aratings").
+  append("svg").
+  attr("width", width  + margin.right).
+  attr("height", height +  margin.bottom);
+
+
+  barDemo.selectAll("rect").
+    data(data).
+    enter().
+    append("rect").
+    attr("y", function(datum, index) { return y(index); }).
+    attr("x", function(datum) { return x(datum.value) - width; }).
+    attr("height", barWidth ).
+    attr("width", function(datum) { return x(datum); }).
+    attr("fill", randomed());
+
+
+  // barDemo.selectAll("text").
+  //   data(data).
+  //   enter().
+  //   append("svg:text").
+  //   attr("x", function(datum, index) { return x(index); }).
+  //   attr("y", function(datum) { return height - y(datum.value); }).
+  //   attr("dx", barWidth/2).
+  //   attr("dy", "1em").
+  //   attr("text-anchor", "middle").
+  //   attr("style", "font-size: 1.25em").
+  //   text(function(datum) { return datum.value;}).
+  //   attr("fill", inverse(randomed()));
+
+  // yAxis = d3.svg.axis() // generate an axis
+  // .scale(yAxis) // set the range of the axis
+  // .tickSize(1) // width of the ticks
+  // .tickSubdivide(true)
+  // .orient("right"); // have the text labels on the left hand side
+  
+    yAxis = d3.svg.axis() // generate an axis
+    .scale(yScale) // set the range of the axis
+    .ticks(5)
+    .tickSize(1) // width of the ticks
+    .orient("right"); // have the text labels on the left hand side
+
+d3.select("#Aratings")
+.call(yAxis);
+
+
+
+</script>
+

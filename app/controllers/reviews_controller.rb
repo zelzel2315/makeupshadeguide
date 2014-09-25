@@ -24,6 +24,9 @@ class ReviewsController < ApplicationController
   end
 
   def show
+  @reviews = Review.all
+
+
   end
 
   def edit
