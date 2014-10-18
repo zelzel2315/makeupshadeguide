@@ -1,3 +1,28 @@
-<h1>Users#edit</h1>
-<p>Find me in app/views/users/edit.html.erb</p>
- 
+
+      <div class="editform">
+        <h1> Edit your Account </h1> 
+
+        <%= form_for @user do |f| %>  
+          <div class="form-group">
+            <%= f.text_field :name, placeholder: "name", class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= f.text_field :email, placeholder: "email address", class: 'form-control', type: 'email' %>
+          </div>
+          <div class="form-group">
+            <%= f.password_field :password, placeholder: "password", class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= f.password_field :password_confirmation, placeholder: "confirm your password", class: 'form-control' %>
+          </div>
+            <%= f.fields_for :user_makeups do |m| %>
+            <%= m.hidden_field :user_id, :value => @user.id %>
+            <div class="form-group">
+            <%= m.collection_select :makeup_id, Makeup.all, :id, :makeup_name, placeholder: "What makeup do you use?" %>
+            </div>
+            <% end %>
+          <div class="form-group"> 
+            <%= f.submit "Submit",:class => 'small button radius' %>
+          </div> 
+        <% end %>
+  </div>

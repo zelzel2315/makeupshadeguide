@@ -1,43 +1,33 @@
-
-
 <div class="trueshade">
-  <h3 class="trueshadetitle"> Your true shade is . . .</h3>
-<div class="resultcontainer">
-  <h1 class="shaderesult"><%= @user.makeups.first.true_shade.name %></h1>
+<div class="row">
+<div class="large-12 column">
+  <div class="resultcontainer">
+    <h1>Your true shade is . . .</h1>
+    <h2><b><%= @user.makeups.first.true_shade.name %></b></h2>
+    <p><%= @user.makeups.first.true_shade.description %></p>
+  </div>
+</div>
+</div>
 
-  <div class="shadedescription"><br>
-   <%= @user.makeups.first.true_shade.description %>
+<div class="row">
+  <div class="large-4 column">
+    <div class="leftbox">
+      <p>Find other foundations that match your true shade from a wide variety of brands.&nbsp;&nbsp;<a id="more"><%= link_to 'More', makeups_path %></a></p>
+      <p>If you can't find your makeup, add it here:&nbsp;&nbsp;<a><%= link_to 'Add', makeups_path %></a></p>
+    </div>
+  </div>
+  <div class="large-8 column">
+    <div class="rightbox">
+      <h2>Your Collection</h2>
+        <% @user.makeups.each do |m| %>
+        <p><b>Brand: </b><%= m.brand %></p><br/>
+        <p><b>Product: </b><%= m.product %></p><br/>
+        <p><b>Shade: </b><%= m.shade %></p><br>
+        <a class="th"><%= image_tag(m.image) %></a>
+        <% end %>
+    </div>
   </div>
 </div>
 
-  <h4><%= link_to 'Find other makeups in your True Shade', makeups_path %></h4>
 </div>
-
-
-
-<div class="makeupimages">
-  <h3 class="listtitle"> Your Collection List </h3>
-  <div class="bottomdiv">
-<br><%= link_to 'Add new makeup', makeups_path, :class => 'small button radius' %>
-</div>
-    
-  <% @user.makeups.each do |m| %>
-    <div class="row">
-      <div class="large-6 columns productbox">
-        <h3><%= m.brand %></h3> <br>
-        <%= m.product %> <br>
-        <%= m.shade %> <br>
-      </div>
-      <div class="large-6 columns productbox">
-        <div class="productimage">
-          <%= image_tag(m.image) %>
-        </div>
-      </div>
-    </div>
-</div>
-    
-  <% end %>
- 
-</div>
-
 
