@@ -20,13 +20,12 @@
     width: 100%;
     height: 100px;
     position: fixed;
-    top: -50px;
-    opacity: 0.8;
+    opacity: 0.1;
     z-index: 999;
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+}
+
+.d3container {
+  background-color: #ebd7d4;
 }
 
 .navbar:hover {
@@ -129,16 +128,16 @@ p.aboutUsContent {
   background-repeat: no-repeat;
 }
 
-.row.contactUs {
+/*.row.contactUs {
   margin-top: 85px;
 }
 
 .section {
   max-width: 500px;
   margin: 0 auto;
-}
+}*/
 
-.bottomsection {
+/*.bottomsection {
   background-image: url("brushed.png");
   height: 375px;
   width: 100%;
@@ -167,7 +166,7 @@ p.aboutUsContent {
   background-image: url("kristinkreuk.jpg");
   background-size: contain;
   background-repeat: no-repeat;
-}
+}*/
 /*End of Welcome Page Styling*/
 
 
@@ -226,5 +225,6 @@ li.custom-button-class {
 
 }
 
+/*#container {font-family:helvetica, sans-serif; text-align:center; width:588px;}*/
 
 
