@@ -1,23 +1,33 @@
-
-<br><%= link_to 'Add new makeup', makeups_path %>
-
-<br>
-<br>
-<h3> Your true shade is </h3>
-<%= @user.makeups.first.true_shade.name %>
-<br><%= @user.makeups.first.true_shade.description %>
-<br><%= link_to 'Find other makeups in your True Shade', makeups_path %>
-<br>
-<br>
-
-<div class="makeupimages">
-  <h3> This is your collection list </h3>
-  <% @user.makeups.each do |m| %>
-  <%= m.brand %> <br>
-  <%= m.product %> <br>
-  <%= m.shade %> <br>
-  <%= image_tag(m.image) %>
-  <% end %>
-  <br>
-  <br>
+<div class="trueshade">
+<div class="row">
+<div class="large-12 column">
+  <div class="resultcontainer">
+    <h1>Your true shade is . . .</h1>
+    <h2><b><%= @user.makeups.first.true_shade.name %></b></h2>
+    <p><%= @user.makeups.first.true_shade.description %></p>
+  </div>
 </div>
+</div>
+
+<div class="row">
+  <div class="large-4 column">
+    <div class="leftbox">
+      <p>Find other foundations that match your true shade from a wide variety of brands.&nbsp;&nbsp;<a id="more"><%= link_to 'More', makeups_path %></a></p>
+      <p>If you can't find your makeup, add it here:&nbsp;&nbsp;<a><%= link_to 'Add', makeups_path %></a></p>
+    </div>
+  </div>
+  <div class="large-8 column">
+    <div class="rightbox">
+      <h2>Your Collection</h2>
+        <% @user.makeups.each do |m| %>
+        <p><b>Brand: </b><%= m.brand %></p><br/>
+        <p><b>Product: </b><%= m.product %></p><br/>
+        <p><b>Shade: </b><%= m.shade %></p><br>
+        <a class="th"><%= image_tag(m.image) %></a>
+        <% end %>
+    </div>
+  </div>
+</div>
+
+</div>
+
