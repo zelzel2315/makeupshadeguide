@@ -1,3 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <!-- <link href="../../css/reset.css" type="text/css" rel="stylesheet" /> -->
+  <style>
+    .makeups-list {
+    /*float: left;*/
+    /*width: 400px;
+    height: 400px;*/
+    background-color: white;
+    position: relative;
+    display: inline-block;
+    }
+
+    .single-makeups {
+    display: inline-block;
+    width: 200px;
+    height: 250px;
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+    }
+
+    body {
+      text-align: center;
+    }
+
+    .makeups-list-image {
+    width: 100px;
+    height: 150px;
+    margin: 35px;
+    }
+
+    .links {
+    clear: both;
+    padding-top: 250px;
+    }
+  </style>
+  </head>
+  <body>
+    </br></br>
+    <div class="makeup-matches">
+      <h2><%= current_user.name %>'s <%= @current_user.makeups.first.true_shade.name %> Shade Matches:</h2>
+      <div ng-controller="MakeupsCtrl">
+        <form>
+          <input type="text" ng-model='newSymbol' placeholder="Enter a symbol">
+          <input type="submit" value="Add">
+        </form>
+        
+          <div id="makeup-list-container">
+            <ul>
+              <li ng-repeat="makeup in makeups" ng-click="showMakeup(makeup)"
+                  ng-click="showMakeups(makeup)">
+                <h3>{{makeup.brand}}, {{makeup.product}}, {{makeup.shade}}</small></h3>
+                <a href='' ng-click="deleteMakeup(makeup.id, $index)">Delete</a>
+              </li>
+            </ul>
+          </div>
+
+        <div class="makeups-list">
+          <br><% @makeups.each do |makeup| %>
+            <div class="single-makeups">
+              <p>
+              </br><%= makeup.brand %>
+              </br><%= makeup.product %>
+              </br><%= makeup.shade %>
+              </br><div class="makeups-list-image"><%= image_tag(makeup.image) %></div>
+              </br><%= link_to 'Show', makeup %>
+              </br><%= link_to 'Edit', edit_makeup_path(makeup) %>
+              </br><%= link_to 'Add to collection', user_makeups_path(makeup_id: makeup.id), method: :post %>
+              </p>
+            <!-- <td><%#= link_to 'Destroy', makeup, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+            </div>
+          <% end %>
+        </div>
+        <br>
+        <div class="links">
+          </br><h4><%= link_to 'Makeup not on the list? Add it here!', new_makeup_path %>
+          <br>
+          <br><h4><%= link_to "Back to your list", user_path(current_user.id) %>
+        </div>
+      </div>
+    </div>
+    <!-- 
+    x = current_user.true_shade_id
+    Makeup.find([:true_shade_id]) -->
+  </body>
+</html>
 
 
 <%= link_to 'Makeup not on the list? Add it here!', new_makeup_path %>
@@ -42,6 +131,7 @@
 <!-- 
 x = current_user.true_shade_id
 Makeup.find([:true_shade_id]) -->
+
 
 
 

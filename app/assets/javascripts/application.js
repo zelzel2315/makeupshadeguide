@@ -13,7 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
-//= require d3
+//= require d3 
+//= require angular
+//= require angular-resource
+//= require app.js.coffee
+//= require_tree ./angular
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+
