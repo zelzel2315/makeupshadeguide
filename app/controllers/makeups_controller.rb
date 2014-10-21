@@ -20,7 +20,7 @@ class MakeupsController < ApplicationController
     @makeup = Makeup.new(makeup_params, user_id: current_user.id, makeup_id: params[:makeup_id], true_shade_id: current_user.true_shade_id)
     # @makeup = current_user.makeups.create(user_id: @user.id, makeup_id: @makeup.id)
 
-    respond_with Makeup.create(makeup_params)
+    respond_to do |format|
       if @makeup.save
         @makeup.update(true_shade: current_user.true_shade)
         session[:makeup_id] = @makeup.id.to_s
@@ -43,6 +43,7 @@ class MakeupsController < ApplicationController
     gon.watch.reviewThree = Review.where(makeup_id: @makeup.id, rating: 3).count
     gon.watch.reviewFour = Review.where(makeup_id: @makeup.id, rating: 4).count
     gon.watch.reviewFive = Review.where(makeup_id: @makeup.id, rating: 5).count
+
   end
 
   def edit
@@ -72,7 +73,10 @@ class MakeupsController < ApplicationController
   def destroy
     @makeup = Makeup.find(params[:id])
     @makeup.destroy
-    respond_with Makeup.destroy(params[:id])
+    respond_to do |format|
+      format.html { redirect_to makeups_url, notice: 'Makeup was successfully destroyed' }
+      format.json { head :no_content }
+    end
   end
 
   private
@@ -80,4 +84,5 @@ class MakeupsController < ApplicationController
   def makeup_params
     params.require(:makeup).permit(:brand, :product, :shade, :image, :true_shade_id, :user_id, :makeup_id)
   end
-
+  
+end
