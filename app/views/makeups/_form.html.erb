@@ -1,5 +1,4 @@
-Makeup form
-
+<div class="makeupform">
 <%= form_for @makeup do |f| %>
 	<% if @makeup.errors.any? %>
 	<div id="error_explanation">
@@ -17,11 +16,7 @@ Makeup form
 	<%= f.text_field :product, placeholder: "Product" %>
 	<%= f.text_field :shade, placeholder: "Shade" %>
 	<%= hidden_field_tag :image %>
- 
- <br>test</br>
-
-	<%= f.submit "Submit" %>
+	<%= f.submit "Submit", class: "small round secondary button" %>
 
 <% end %>
-
-<%= link_to "Back to makeup list", makeups_path %>
+</div>
