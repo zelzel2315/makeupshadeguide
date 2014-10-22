@@ -1,27 +1,22 @@
 <br/>
 <br/>
 <div class="row">
-  <div class="large-12 columns">
+  
     <div class="panel">
       <!-- Users makeup pick -->
-      <h2><%= @makeup.brand %></h2>
-      <br><%= @makeup.product %><p><p/><%= @makeup.shade %><br/>
-      <p><%= @makeup.description %></p>
+      <table>
+        <tr>
+          <td class="makeup-info"><h2><%= @makeup.brand %>
+          <br><%= @makeup.product %>
+          <br><%= @makeup.shade %>
+          <p></br><%= @makeup.description %></h2></td>
+          <td class="makeup-show-image"><p><%= image_tag("/assets/makeup/#{@makeup.image}") %></p></td>
+        </tr>
+      </table>
   </div>
+
 </div>
-</div>
-<div class="row">
-  <div class="large-5 columns">
-    <!-- <div class="panel"> -->
-       <div class="makeupimages">
-          <%= image_tag("/assets/makeup/#{@makeup.image}") %>
-      </div>
-      <br/><br/>
-      <div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
-      </div>
- <!--  </div> -->
-</div>
-</div>
+
 <div class="large-6 columns">
     <div class="row">
        <div class="large-12 columns">

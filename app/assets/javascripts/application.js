@@ -14,11 +14,24 @@
 //= require jquery_ujs
 //= require foundation
 //= require d3 
-//= require angular
-//= require angular-resource
-//= require app.js.coffee
+//= require app
 //= require_tree ./angular
-//= require_tree .
+//= require owl.carousel
 
-$(function(){ $(document).foundation(); });
+$(document).ready(function() {
+ 
+  $("#owl-demo").owlCarousel({
+    autoPlay : 3000,
+    stopOnHover : true,
+    navigation:true,
+    paginationSpeed : 1000,
+    goToFirstSpeed : 2000,
+    singleItem : true,
+    autoScaleSlider:false,
+	autoHeight: false
+    // transitionStyle:"fade"
+  });
 
+  
+ 
+});

@@ -3,6 +3,7 @@ class MakeupsController < ApplicationController
 
   def index
     @makeups = Makeup.where(true_shade_id: current_user.true_shade_id)
+    # render json: Makeup.where(true_shade_id: current_user.true_shade_id)
   end
 
   def static
@@ -35,7 +36,7 @@ class MakeupsController < ApplicationController
 
   def show
     @makeup = Makeup.find(params[:id])
-    render json: Makeups.find(params[:id])
+    # render json: Makeups.find(params[:id])
     @review = Review.new
     @reviews = @makeup.reviews
     gon.watch.reviewOne = Review.where(makeup_id: @makeup.id, rating: 1).count

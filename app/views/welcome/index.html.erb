@@ -1,59 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
+  
+  </head>
   <style>
 
 </style>
 </head>
 <body>
-<div class="welcomePageBackground">
-  <div class = "large-9 columns" id="logo">
-  </div>
+
+<div class="welcomePage">
 
   <!-- Start of Foundation Orbit -->
-  <div id="headcontain" class="row">
-    <div class="orbitContainer" data-orbit>
-      <li>
-        <%= image_tag("coverphoto_small.jpg", :alt => "" ) %>
-      </li>
-      <li>
-        <%= image_tag("f1.jpg", :alt => "") %>
-      </li>
-      <li class="active">
-        <%= image_tag("f2.jpg", :alt => "") %>
-      </li>
-      <li>
-        <%= image_tag("f3.jpg", :alt => "") %>
-      </li>
+  <div id="image-slider-container">
+    <div id="owl-demo" class="owl-carousel">
+      <div>
+        <h2>Shopping for Makeup Made Easy</h2>
+        <h3 class="welcome-font">Never waste time or money again trying to find your matching shade. Let Makeup Shade Guide find it for you.</h3>
+        <img src="assets/coverphoto_small.jpg" alt=""/>
+      </div>
+      <div>
+        <h2>What Makeup Do You Use?</h2>
+        <h3 class="welcome-font">We find other products that match your current makeup through your True Shade. Your True Shade will tell us your skin color, your skin undertone, and what makeups match you.</h3>
+        <img src="assets/f1.jpg" alt=""/>
+      </div>
+      <div class="active">
+        <h2>How Do We Do This?</h2>
+        <h3 class="welcome-font">We don't, YOU do! Users leave Shade Matching Reviews for makeups to improve shade matching accuracy. Used a shade that didn't match you? Leave a review.</h3>
+        <img src="assets/f2.jpg", alt=""/>
+      </div>
+      <div>
+        <h2>Find Your Matching Makeup Shades</h2>
+        <h3 class="welcome-font">Hundreds of brands, thousands of products, a whole lot of shades!</h3>
+        <img src="assets/f3.jpg", alt=""/>
+      </div>
     </div>
   </div>
-  <!-- End of Orbit -->
-
-  <!-- Start of AboutUs -->
-  
-  <div class="row aboutUs">
-    <div class="large-6 columns">
-      <h3 class="whoarewe">Who are we?</h3>
-
-      <p class="aboutUsContent">
-        Makeup Shade Guide standardizes the thousands of foundations into set "true shades" for women to make cosmetic shopping an easier and more pleasant experience. Users sign up, enter their current matching foundation shade(s), and Makeup Shade Guide will generate other matching foundations. The more users that join, the more [accurate] the foundations will be. Try it out!
-      </p>
-
-    </div><!-- end of large 6 -->
-
-    <div class="large-3 columns">
-      <div class="photo1 th"></div>
-      <div class="photo2 th"></div>
-
-    </div><!-- end of large 6 -->
-
-    <div class="large-3 columns">
-     <div class="photo3 th"></div>
-     <div class="photo4 th"></div>
-   </div>
- </div><!-- end of row -->
-
- <!-- End of AboutUs -->
+</div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    
 </body>
 </html>
 

@@ -1,1 +1,1 @@
-window.app = angular.module("MUSG-final2", ['ngResource']);
+window.App = angular.module('MUSG-final2', ['ngResource'])

@@ -12,6 +12,7 @@ gem 'active_model_serializers'
 gem 'angular-rails-templates'
 gem 'd3_rails'
 gem 'gon'
+gem 'owlcarousel-rails'
 
 
 
