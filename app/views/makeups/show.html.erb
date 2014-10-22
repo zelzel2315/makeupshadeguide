@@ -9,15 +9,18 @@
       <p><%= @makeup.description %></p>
   </div>
 </div>
+</div>
 <div class="row">
   <div class="large-5 columns">
     <!-- <div class="panel"> -->
        <div class="makeupimages">
           <%= image_tag("/assets/makeup/#{@makeup.image}") %>
-      </div><br/><br/>
+      </div>
+      <br/><br/>
       <div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
       </div>
  <!--  </div> -->
+</div>
 </div>
 <div class="large-6 columns">
     <div class="row">
@@ -30,16 +33,11 @@
               <hr/>
               <% end %>
           </div>
-      </div>
+      </div>     
+</div>
+</div>
 
 
-      <div class="d3rendered">
-       <%= render 'partials/data' %>
-   </div>
-</div>
-</div>
-</div>
-</div>
 <div class="custom-button-class">
     <ul>
       <li><%= link_to 'Add a makeup', new_makeup_path, :class => 'small button radius' %></li><br>
@@ -48,11 +46,11 @@
       <li><%= link_to 'Add to collection', user_makeups_path(user_id: current_user.id, makeup_id: @makeup.id), method: :post, :class => 'small button radius' %>
   </ul>
 </div>
-<footer class="row">
-    <hr/>
-    <div class="large-5 columns">
-      <p>© Copyright MakeupShadeGuide.</p>
-  </div>
-</div>
-</div>
-</footer>
+
+
+<div class="d3rendered">
+       <%= render 'partials/data' %>
+   </div>
+
+
+   
