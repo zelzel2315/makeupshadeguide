@@ -9,7 +9,14 @@
           <td class="makeup-info"><h2><%= @makeup.brand %>
           <br><%= @makeup.product %>
           <br><%= @makeup.shade %>
-          <p></br><%= @makeup.description %></h2></td>
+          <p></br><%= @makeup.description %></h2>
+          <div>
+            <p class="button"><%= link_to 'Add a makeup', new_makeup_path %></p>
+            <p class="button"><%= link_to "Review makeup", new_review_path(makeup_id: @makeup.id) %></p>
+            <p class="button"><%= link_to "Back to makeup list", makeups_path %></p>
+            <p class="button"><%= link_to 'Add to collection', user_makeups_path(user_id: current_user.id, makeup_id: @makeup.id), method: :post %></p>
+          </div>
+          </td>
           <td class="makeup-show-image"><p><%= image_tag("/assets/makeup/#{@makeup.image}") %></p></td>
         </tr>
       </table>
@@ -33,14 +40,10 @@
 </div>
 
 
-<div class="custom-button-class">
-    <ul>
-      <li><%= link_to 'Add a makeup', new_makeup_path, :class => 'small button radius' %></li><br>
-      <li><%= link_to "Review makeup", new_review_path(makeup_id: @makeup.id), :class => 'small button radius' %></li><br>
-      <li><%= link_to "Back to makeup list", makeups_path, :class => 'small button radius' %></li><br>
-      <li><%= link_to 'Add to collection', user_makeups_path(user_id: current_user.id, makeup_id: @makeup.id), method: :post, :class => 'small button radius' %>
-  </ul>
-</div>
+
+
+
+
 
 
 <div class="d3rendered">
