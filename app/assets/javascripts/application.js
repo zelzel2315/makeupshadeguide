@@ -18,6 +18,8 @@
 //= require_tree ./angular
 //= require owl.carousel
 
+$(function(){ $(document).foundation(); });
+
 $(document).ready(function() {
  
   $("#owl-demo").owlCarousel({
@@ -32,6 +34,6 @@ $(document).ready(function() {
     // transitionStyle:"fade"
   });
 
-  
+   
  
 });
